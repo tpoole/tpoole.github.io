@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<meta name="viewport" content="width=400px">
+</head>
+
+<body>
+
+<div style="width: 360px; text-align: center">
+
+<h1>What should Toby drink?</h1>
+
+Venue name:
+<input type="text" id="venue" style="width: 220px; margin-left: 5px" onkeyup="venueChanged()">
+
+<h1 id="drink"></h1>
+
+<p id="tag"></p>
+
+<button id="veto" type="button" style="width: 240px; visibility: hidden; margin-top: 20px" onclick="veto()">Veto!</button>
+<br>
+<button class="vetoOptions" type="button" style="width: 240px; visibility: hidden; margin-top: 30px" onclick="updateDrink(0)">They don't have it</button>
+<br>
+<button class="vetoOptions" type="button" style="width: 240px; visibility: hidden; margin-top: 20px" onclick="updateDrink(16)">We've just had that!</button>
+<br>
+<button class="vetoOptions" type="button" style="width: 240px; visibility: hidden; margin-top: 20px" onclick="updateDrink(24)">Skip anyway</button>
+<br>
+<button class="vetoOptions" type="button" style="width: 240px; visibility: hidden; margin-top: 20px" onclick="death()">Toby's dead</button>
+
+<h2 id="death"></h2>
+
+</div>
+
+<script>
+
+var drinks = [
+    "liqueur",
+    "vodka",
+    "gin",
+    "whiskey",
+    "rum",
+    "cider",
+    "tequila",
+    "sambuca",
+    "jagerbomb",
+    "fortified wine",
+    "red wine",
+    "white wine",
+    "rose",
+    "ale",
+    "alcopop",
+    "lager"
+    ]
+
+var descs = [
+    "lovely",
+    "swift",
+    "surprising",
+    "nasty",
+    "boring",
+    "exciting",
+    "fine",
+    "classic",
+    "healthy",
+    "small",
+    "cheeky",
+    "vintage",
+    "cheap",
+    "dirty",
+    "spicy",
+    "posh"
+    ]
+
+var tags = [
+    "Hooray!",
+    "Lovely!",
+    "Genius!",
+    "Winner!",
+    "Perfect!",
+    "Yummy!",
+    "You lucky fuck!",
+    "Toby's favourite!",
+    "Magnificent!",
+    "Yeah!",
+    "What an excellent idea!",
+    "Of course!",
+    "Yes mate!",
+    "Cheers!",
+    "Woohoo!",
+    "Classy!"
+    ]
+
+var iDrink = 0;
+var hashInts = [];
+
+function venueChanged() {
+    var hash = CryptoJS.MD5(document.getElementById("venue").value.replace(/ /g, '').toLowerCase());
+    hexHash = hash.toString(CryptoJS.enc.Hex);
+    hashInts = [];
+    for (var i = 0, len = hexHash.length; i < len; i++) {
+        hashInts.push(parseInt(hexHash[i], 16));
+    }
+    document.getElementById("veto").style.visibility = "visible";
+    for(var x = document.getElementsByClassName("vetoOptions"), i = x.length; i--;)
+        x[i].style.visibility = "hidden";
+    iDrink = 0;
+    updateDrink(0);
+};
+
+function updateDrink(offset) {
+    var i1 = (iDrink + offset) % 32;
+    var i2 = (i1 + 3) % 32;
+    var i3 = (i2 + 1) % 32;
+    var drink = drinks[hashInts[i1]];
+    var desc = descs[hashInts[i2]];
+    var tag = tags[hashInts[i3]];
+    document.getElementById("drink").innerHTML = "A " + desc + " " + drink;
+    document.getElementById("tag").innerHTML = tag;
+    document.getElementById("death").innerHTML = "";
+    iDrink++;
+};
+
+function veto() {
+    for(var x = document.getElementsByClassName("vetoOptions"), i = x.length; i--;)
+        x[i].style.visibility = "visible";
+}
+
+function death() {
+    document.getElementById("death").innerHTML = "Just an ale then...";
+}
+
+</script>
+
+</body>
+</html>
+

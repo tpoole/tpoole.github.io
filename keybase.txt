@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/tpoole
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://tpoole.org
+  * I am tpoole (https://keybase.io/tpoole) on keybase.
+  * I have a public key with fingerprint 59C2 632F EB1B 5702 C29A  39C3 7370 320B 804F CCBA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "59c2632feb1b5702c29a39c37370320b804fccba",
+            "host": "keybase.io",
+            "key_id": "7370320b804fccba",
+            "kid": "0101846559f2047379af9a9147deff3cdb23c9e41138076e8e2c00118f8975d984a70a",
+            "uid": "29616dd0a086cd42584e1aed6f438d19",
+            "username": "tpoole"
+        },
+        "service": {
+            "hostname": "tpoole.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1428161445,
+    "expire_in": 157680000,
+    "prev": "bd1ff78d8be402e610ecfd5c865da6174a8c79cd43ebcc33e324586d14804c1c",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUm1MFFcUXRZE3YACgiFUK47bgnSL8/2xiA2WhiwaDU1JSxbZzLx5s4zAzjK7
+IITWpAShoK1bsFAlQKDVUEospSFoBAUM1qJIBRQak1K1tdVCCjXxB3TdzpD2R5O+
+Py/v3HPOfefm+sKDDcYgmjx407nDmBN0YzhVMGTHB1+uQARFLEesFUgBXL0k2eWE
+qluVXV7EilAcwGkCl6CACRSD4gDneIIDBEMwKIGjAouSEgACj1iQfMWjKzQbgffA
+ZFnRMO3hkEUN/R9+wWoBxVCMJWmK4iQcJTUax0scz2EkI0JJIoAo4ATgIIlhBIsy
+NGQhDlAUw1iJ5RhK5FiSZ1DdrmTVDudojBZFlEdZGogkTrEkxHgo0hJJsCLG6UQP
+VF18EdTYXreiFELkPQuiYaUygPoA9Bz/qScrqlPTuVXFqwClUMPzvV63VZd5y906
+7wgUHP84OATZJWoj1ASlUPXIiguxYhoTeGXdEiNxFqMxkqQsCCxzyyp0yDqDYmgW
+1Y7eBpZqloKISRLDiqwASRSHNIZCIIkUYGlK5GmMIXkWMJwWkYACAAQBCZykWFrE
+SG3EAAOInqnYpSBWUvsm79QsPbLTxXtLVC2wqda4JcQQZDSErjHqW2AwrY/4dzfa
+Axv9UdO5KbuH7v5KdoT0cWnDv1RX7rMtH+jZvLi9b+n1QouQnvbH565LpqjnV+5/
+11bzMLv9zNHGif47s76icvrV24HE6Yas4vdr7jcSanfu3drJio/P1X15siTplHkp
+ZPB41hbb5XVs/EhXS1bXybikatCa13xm+Wnd48yIvMX8e2935vLzkY4NM72jb/Vd
+fFwgS1GmzXMrVXxW+Jth59odI2XhF29mNrfbx0vSfqu2qad8cVWV/dfGbj37IJQ3
+c699ExpIOjyf/NXR9Z3jEmbvbVKsw35bYgtzQRrf2Gboalz6dGW6uvXDDirLvKv0
+WHfjy6enemfmXIMrs2P2d59+EtuXP9EhPVwYuL7/s131Tvaged8ha2LthF+et6Vn
+TPkdjhd+HJ0pU5Hlb7+gr92+M3tjbp5J6X/lr8GdCy2H2gIvbbOXRm83l8WknpBu
+/ZwATPeSEq7GnHjSFOjbTSS2Xu3Jy8wYuHB+3cho5Nc1OfWetuiyaP+zK1s9phfl
+sw17LJvC0q2dqTGOiEs5Y392FKb4Hjlj64+0Su4Hxrg1UwOP9lZQi5tssYvZ/m0N
+lutrp0KNewLNvg3O5/vDvi+ezKjsfsC2AMdoPlz4yZ4TOY9VpfZvbenaGxc+GVwe
+b64+XvDGD+fP2o819LqG3In9O5pmdxY9SVBODxZbVbLuo8O/D73TY/sb
+=erpo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tpoole
+
+==================================================================

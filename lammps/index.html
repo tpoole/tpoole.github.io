@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="width: 550px">
+
+<h1>Javascript LAMMPS</h1>
+
+<h2>Input</h2>
+<textarea rows="32" cols="80" id="input">
+# 3d Lennard-Jones melt
+
+variable    x index 1
+variable    y index 1
+variable    z index 1
+
+variable    xx equal 5*$x
+variable    yy equal 5*$y
+variable    zz equal 5*$z
+
+units       lj
+atom_style  atomic
+
+lattice     fcc 0.8442
+region      box block 0 ${xx} 0 ${yy} 0 ${zz}
+create_box  1 box
+create_atoms    1 box
+mass        1 1.0
+
+velocity    all create 1.44 87287 loop geom
+
+pair_style  lj/cut 2.5
+pair_coeff  1 1 1.0 1.0 2.5
+
+neighbor    0.3 bin
+neigh_modify    delay 0 every 20 check no
+
+fix     1 all nve
+
+run     100
+</textarea>
+
+<button type="button" onclick="buttonClicked()">Run LAMMPS</button>
+
+<textarea rows="2" cols="80" id="status">
+</textarea>
+
+<h2>Output</h2>
+<textarea rows="32" cols="80" id="output">
+</textarea>
+
+<script src="lmp_emscripten.js"></script>
+<script>
+function buttonClicked() {
+    document.getElementById("output").value = "";
+    document.getElementById("status").value = "Running...";
+    setTimeout(runLammps, 50);
+};
+function runLammps() {
+    var content = document.getElementById("input").value;
+    var result = lammps.run(content);
+    document.getElementById("status").value += "\nDone.";
+    document.getElementById("output").value = result;
+};
+</script>
+
+</div>
+
+</body>
+</html>
+

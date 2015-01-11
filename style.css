@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #000;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+h4 {
+    padding-top: 15px;
+}
+
+a {
+    color: #DE5E33;
+}
+
+a:visited {
+    color: #912F28;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 180%;
+}
+
+.subtitle {
+    margin: 0;
+}
+
+.section > ul {
+    padding-left: 0;
+}
+
+.section > ul > li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.navigation-list {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list > li {
+    padding-top: 25px;
+}
+
+.navigation {
+    position: fixed;
+    /* Hack for ancient browsers which don't support "position: fixed;" */
+    float: left;
+    padding: 30px;
+    margin-top: 30px;
+    border-right: solid 1px #444;
+}
+
+.navigation > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 210px;
+    padding: 0px 45px;
+}
+
+.logo {
+    float : right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 30px 0px;
+    border-bottom: solid 1px #444;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
