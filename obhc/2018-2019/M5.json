@@ -1,0 +1,49 @@
+[
+    {
+        "opposition": "OB's 6",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Rich Davies",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Clifton Robinsons E",
+        "opposition_score": 1,
+        "scorers": []
+    },
+    {
+        "opposition": "Westbury and UB F",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jake Clement",
+                "goals": 1
+            },
+            {
+                "name": "Dan Green",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "South Gloucestershire Men's B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Steve Pearce",
+                "goals": 1
+            },
+            {
+                "name": "Gary A",
+                "goals": 1
+            },
+            {
+                "name": "Heff H",
+                "goals": 1
+            }
+        ]
+    }
+]

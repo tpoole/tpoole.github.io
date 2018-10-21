@@ -1,0 +1,83 @@
+[
+    {
+        "opposition": "Nailsea 2",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Lisa Parker",
+                "goals": 3
+            },
+            {
+                "name": "Ali Strutt",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "North Somerset 2",
+        "opposition_score": 4,
+        "scorers": []
+    },
+    {
+        "opposition": "Redland UWE",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Lisa Parker",
+                "goals": 3
+            },
+            {
+                "name": "Charlotte K",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Windscombe",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Lou",
+                "goals": 1
+            },
+            {
+                "name": "Emma Harper",
+                "goals": 1
+            },
+            {
+                "name": "Izzy Shore",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Knowle Ladies 3",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Lou",
+                "goals": 1
+            },
+            {
+                "name": "Ali Strutt",
+                "goals": 1
+            },
+            {
+                "name": "Holly",
+                "goals": 1
+            },
+            {
+                "name": "Izzy Shore",
+                "goals": 1
+            },
+            {
+                "name": "Sienna",
+                "goals": 1
+            },
+            {
+                "name": "Lisa Parker",
+                "goals": 1
+            }
+        ]
+    }
+]

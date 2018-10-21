@@ -1,0 +1,48 @@
+[
+    {
+        "opposition": "North Somerset Ladies 1s",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Sophie Parker",
+                "goals": 1
+            },
+            {
+                "name": "Jamey Wallace",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Frome 2s",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sophie Parker",
+                "goals": 1
+            },
+            {
+                "name": "Kirstie",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Jaspers 2s",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Kirstie",
+                "goals": 2
+            },
+            {
+                "name": "Ellie",
+                "goals": 1
+            },
+            {
+                "name": "Lis",
+                "goals": 1
+            }
+        ]
+    }
+]

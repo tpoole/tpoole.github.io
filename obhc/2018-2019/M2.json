@@ -1,0 +1,82 @@
+[
+    {
+        "opposition": "Firebrands D",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 3
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 2
+            },
+            {
+                "name": "Dylan Kissell",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bridgewater A",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 2
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            },
+            {
+                "name": "Matt Mayes",
+                "goals": 1
+            },
+            {
+                "name": "Dylan Kissell",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Clifton Robinsons D",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Charlie de la Lynde",
+                "goals": 2
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 1
+            },
+            {
+                "name": "Jasper",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol Firebrands Men's C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dylan Kissell",
+                "goals": 2
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            },
+            {
+                "name": "Charlie de la Lynde",
+                "goals": 1
+            },
+            {
+                "name": "Opponent 1",
+                "goals": 1
+            }
+        ]
+    }
+]

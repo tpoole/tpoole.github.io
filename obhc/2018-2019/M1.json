@@ -1,0 +1,62 @@
+[
+    {
+        "opposition": "Somerset Gryphons",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Taunton Vale B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB As",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Mike",
+                "goals": 1
+            },
+            {
+                "name": "Henry",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Team Bath Buccs C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Ciaran",
+                "goals": 2
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 2
+            },
+            {
+                "name": "Matt Walker",
+                "goals": 1
+            }
+        ]
+    }
+]

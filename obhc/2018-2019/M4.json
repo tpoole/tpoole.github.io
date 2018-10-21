@@ -1,0 +1,57 @@
+[
+    {
+        "opposition": "Somerset Gryphons A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 1
+            },
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol and West D",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 2
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "South Glos A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Brooksie",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol Firebrands Men's E",
+        "opposition_score": 2,
+        "scorers": []
+    }
+]

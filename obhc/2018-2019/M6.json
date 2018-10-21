@@ -1,0 +1,40 @@
+[
+    {
+        "opposition": "OB's 5",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Will D",
+                "goals": 1
+            },
+            {
+                "name": "Steve S",
+                "goals": 1
+            },
+            {
+                "name": "Luca",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol and West E",
+        "opposition_score": 2,
+        "scorers": []
+    },
+    {
+        "opposition": "Clifton Robinsons E",
+        "opposition_score": 6,
+        "scorers": []
+    },
+    {
+        "opposition": "Westbury & United Banks 6th XI (Warriors)",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Jez",
+                "goals": 1
+            }
+        ]
+    }
+]

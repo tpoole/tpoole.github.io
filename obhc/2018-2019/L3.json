@@ -1,0 +1,62 @@
+[
+    {
+        "opposition": "Wick Ladies 2s",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Poppy",
+                "goals": 1
+            },
+            {
+                "name": "Helen Slingsby",
+                "goals": 1
+            },
+            {
+                "name": "Alice",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Yate Ladies 2s",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nina",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Wotton Under Edge",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Nina",
+                "goals": 1
+            },
+            {
+                "name": "Lizzy W",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Thornbury Womens 1",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sophie Poole",
+                "goals": 1
+            },
+            {
+                "name": "Charlotte K",
+                "goals": 1
+            },
+            {
+                "name": "Kate G",
+                "goals": 1
+            }
+        ]
+    }
+]

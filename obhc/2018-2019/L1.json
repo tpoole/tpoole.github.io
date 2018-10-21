@@ -1,0 +1,44 @@
+[
+    {
+        "opposition": "Weston Supermare Ladies 1s",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Lucy",
+                "goals": 2
+            },
+            {
+                "name": "Kolgate",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Clifton Robinsons Ladies 3s",
+        "opposition_score": 1,
+        "scorers": []
+    },
+    {
+        "opposition": "Taw Valley",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Sammy",
+                "goals": 1
+            },
+            {
+                "name": "Florrie",
+                "goals": 1
+            },
+            {
+                "name": "Lara",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Mendip Ladies 1s",
+        "opposition_score": 2,
+        "scorers": []
+    }
+]
