@@ -44,5 +44,19 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Cheddar Womens 1",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Becks law",
+                "goals": 1
+            },
+            {
+                "name": "Ciara McGinn",
+                "goals": 1
+            }
+        ]
     }
 ]
