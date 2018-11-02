@@ -101,7 +101,7 @@
 				var chartContainer = document.createElement("div");
 
 				chartContainer.setAttribute("style", "width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;");
-				
+
 				var canvases = [];
 
 				for (var icanvas = 0; icanvas < 3; icanvas++) {
@@ -110,9 +110,9 @@
 
 					var canvas = document.createElement("canvas");
 					div.appendChild(canvas);
-					
+
 					chartContainer.appendChild(div);
-					
+
 					canvases.push(canvas);
 				}
 
@@ -214,7 +214,7 @@
 					var resultData = teamData[iresult];
 
 					labels.push(iresult + 1);
-					
+
 					var goalCount = 0;
 
 					for (var iscorer = 0; iscorer < resultData.scorers.length; iscorer++) {
@@ -380,7 +380,7 @@
 			request.onreadystatechange = function() {
       			if (request.readyState == 4 && request.status == "200") {
 				    data[teamName] = JSON.parse(request.responseText);
-						
+
 					var numTeamDataFetched = 0;
 					for (name in data) {
 						if (data.hasOwnProperty(name)) {
@@ -393,7 +393,7 @@
 					}
 				}
 			}
-			
+
 			request.send();
 		};
 

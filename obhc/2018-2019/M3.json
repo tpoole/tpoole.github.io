@@ -41,5 +41,15 @@
                 "goals": 2
             }
         ]
+    },
+    {
+        "opposition": "Shepton Mallet A",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Robbo",
+                "goals": 1
+            }
+        ]
     }
 ]

@@ -32,7 +32,7 @@
                 "goals": 2
             },
             {
-                "name": "Mike",
+                "name": "Mike B",
                 "goals": 1
             },
             {
@@ -55,6 +55,28 @@
             },
             {
                 "name": "Matt Walker",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "City of Bath A",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 5
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            },
+            {
+                "name": "Mike B",
+                "goals": 1
+            },
+            {
+                "name": "Olly Davis",
                 "goals": 1
             }
         ]

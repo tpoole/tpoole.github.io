@@ -53,5 +53,15 @@
         "opposition": "Bristol Firebrands Men's E",
         "opposition_score": 2,
         "scorers": []
+    },
+    {
+        "opposition": "Bridgwater B",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Mike Summers",
+                "goals": 1
+            }
+        ]
     }
 ]

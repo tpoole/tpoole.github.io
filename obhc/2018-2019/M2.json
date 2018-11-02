@@ -78,5 +78,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Shepton Mallet A",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "James Bullen",
+                "goals": 1
+            }
+        ]
     }
 ]
