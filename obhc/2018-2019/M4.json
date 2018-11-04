@@ -18,7 +18,7 @@
         ]
     },
     {
-        "opposition": "Bristol and West D",
+        "opposition": "Bristol & West D",
         "opposition_score": 1,
         "scorers": [
             {
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "opposition": "South Glos A",
+        "opposition": "South Glos. A",
         "opposition_score": 2,
         "scorers": [
             {
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "opposition": "Bristol Firebrands Men's E",
+        "opposition": "Firebrands E",
         "opposition_score": 2,
         "scorers": []
     },
@@ -60,6 +60,20 @@
         "scorers": [
             {
                 "name": "Mike Summers",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Keynsham A",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Pickup",
+                "goals": 2
+            },
+            {
+                "name": "Edd Thompson",
                 "goals": 1
             }
         ]

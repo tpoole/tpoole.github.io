@@ -1,6 +1,6 @@
 [
     {
-        "opposition": "OB's 5",
+        "opposition": "Old Bristolians D",
         "opposition_score": 1,
         "scorers": [
             {
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "opposition": "Bristol and West E",
+        "opposition": "Bristol & West E",
         "opposition_score": 2,
         "scorers": []
     },
@@ -28,11 +28,21 @@
         "scorers": []
     },
     {
-        "opposition": "Westbury & United Banks 6th XI (Warriors)",
+        "opposition": "Westbury and UB E",
         "opposition_score": 6,
         "scorers": [
             {
                 "name": "Jez",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB F",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Kev Magner",
                 "goals": 1
             }
         ]

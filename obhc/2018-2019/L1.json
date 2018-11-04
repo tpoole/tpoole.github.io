@@ -1,6 +1,6 @@
 [
     {
-        "opposition": "Weston Supermare Ladies 1s",
+        "opposition": "Weston super Mare",
         "opposition_score": 1,
         "scorers": [
             {
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "opposition": "Clifton Robinsons Ladies 3s",
+        "opposition": "Clifton Robinsons 3",
         "opposition_score": 1,
         "scorers": []
     },
@@ -32,12 +32,12 @@
             },
             {
                 "name": "Lara",
-                "goals": 1
+                "goals": 2
             }
         ]
     },
     {
-        "opposition": "Mendip Ladies 1s",
+        "opposition": "Mendip",
         "opposition_score": 2,
         "scorers": []
     }

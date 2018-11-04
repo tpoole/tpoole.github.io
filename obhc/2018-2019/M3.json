@@ -33,7 +33,7 @@
         ]
     },
     {
-        "opposition": "Westbury & United Banks 4th XI (Wanderers)",
+        "opposition": "Westbury and UB C",
         "opposition_score": 2,
         "scorers": [
             {
@@ -43,11 +43,33 @@
         ]
     },
     {
-        "opposition": "Shepton Mallet A",
+        "opposition": "North Somerset A",
         "opposition_score": 1,
         "scorers": [
             {
                 "name": "Robbo",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Firebrands D",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Tom Poole",
+                "goals": 1
+            },
+            {
+                "name": "Nick Heal",
+                "goals": 1
+            },
+            {
+                "name": "Luca",
+                "goals": 1
+            },
+            {
+                "name": "Steve S",
                 "goals": 1
             }
         ]

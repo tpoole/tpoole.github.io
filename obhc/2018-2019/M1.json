@@ -24,7 +24,7 @@
         ]
     },
     {
-        "opposition": "Westbury and UB As",
+        "opposition": "Westbury and UB A",
         "opposition_score": 3,
         "scorers": [
             {
@@ -77,6 +77,16 @@
             },
             {
                 "name": "Olly Davis",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bridgwater",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Jamie",
                 "goals": 1
             }
         ]

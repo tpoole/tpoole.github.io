@@ -1,6 +1,6 @@
 [
     {
-        "opposition": "Wick Ladies 2s",
+        "opposition": "Wick 2",
         "opposition_score": 0,
         "scorers": [
             {
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "opposition": "Yate Ladies 2s",
+        "opposition": "Yate 3",
         "opposition_score": 2,
         "scorers": [
             {
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "opposition": "Wotton Under Edge",
+        "opposition": "Wotton under Edge 2",
         "opposition_score": 1,
         "scorers": [
             {
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "opposition": "Thornbury Womens 1",
+        "opposition": "Thornbury",
         "opposition_score": 2,
         "scorers": [
             {
@@ -53,6 +53,16 @@
                 "name": "Charlotte K",
                 "goals": 1
             },
+            {
+                "name": "Kate G",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol and West",
+        "opposition_score": 7,
+        "scorers": [
             {
                 "name": "Kate G",
                 "goals": 1

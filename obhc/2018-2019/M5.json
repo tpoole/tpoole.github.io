@@ -1,6 +1,6 @@
 [
     {
-        "opposition": "OB's 6",
+        "opposition": "Old Bristolians E",
         "opposition_score": 3,
         "scorers": [
             {
@@ -29,7 +29,7 @@
         ]
     },
     {
-        "opposition": "South Gloucestershire Men's B",
+        "opposition": "South Glos. B",
         "opposition_score": 1,
         "scorers": [
             {
@@ -42,6 +42,16 @@
             },
             {
                 "name": "Heff H",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol & West E",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jake Clements",
                 "goals": 1
             }
         ]
