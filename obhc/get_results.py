@@ -35,6 +35,7 @@ for query in queries:
 
     session = requests.session()
     r = requests.post(query["url"], data=query["post_data"])
+    r.raise_for_status()
 
     results = {}
 
