@@ -88,5 +88,49 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Bristol & West C",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Dylan Kissell",
+                "goals": 1
+            },
+            {
+                "name": "James Bullen",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB B",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Unknown",
+                "goals": 3
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB C",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Unknown",
+                "goals": 5
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol University C",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Owen Mills",
+                "goals": 1
+            }
+        ]
     }
 ]

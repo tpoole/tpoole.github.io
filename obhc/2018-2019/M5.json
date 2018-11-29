@@ -19,7 +19,7 @@
         "opposition_score": 1,
         "scorers": [
             {
-                "name": "Jake Clement",
+                "name": "Jake Clements",
                 "goals": 1
             },
             {
@@ -52,6 +52,34 @@
         "scorers": [
             {
                 "name": "Jake Clements",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB E",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Old Bristolians E",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 1
+            },
+            {
+                "name": "Steve Pearce",
+                "goals": 1
+            },
+            {
+                "name": "Dan Green",
                 "goals": 1
             }
         ]

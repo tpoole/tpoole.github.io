@@ -68,5 +68,34 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Dursley",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Holly",
+                "goals": 1
+            },
+            {
+                "name": "Poppy",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Avonmouth",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Ali Strutt",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "South Gloucestershire",
+        "opposition_score": 2,
+        "scorers": []
     }
 ]

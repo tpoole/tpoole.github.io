@@ -77,5 +77,67 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB D",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nick Tew",
+                "goals": 2
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Mid Somerset A",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Eric",
+                "goals": 1
+            },
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            },
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            },
+            {
+                "name": "Alex Hayes",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "North Somerset B",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ]
     }
 ]

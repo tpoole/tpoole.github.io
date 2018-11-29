@@ -79,5 +79,33 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westberries 5",
+        "opposition_score": 2,
+        "scorers": []
+    },
+    {
+        "opposition": "Bristol Bluebirds",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Izzy shore",
+                "goals": 1
+            },
+            {
+                "name": "Cesca",
+                "goals": 1
+            },
+            {
+                "name": "Talia",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Keynsham 3",
+        "opposition_score": 1,
+        "scorers": []
     }
 ]

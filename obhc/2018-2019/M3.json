@@ -73,5 +73,47 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Clifton Robinsons D",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Robbo",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Shepton Mallet A",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Robbo",
+                "goals": 1
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB B",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Luca",
+                "goals": 3
+            },
+            {
+                "name": "Robbo",
+                "goals": 2
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
     }
 ]

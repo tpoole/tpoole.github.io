@@ -4,7 +4,7 @@
         "opposition_score": 1,
         "scorers": [
             {
-                "name": "Lucy",
+                "name": "Lucy Forward",
                 "goals": 2
             },
             {
@@ -40,5 +40,61 @@
         "opposition": "Mendip",
         "opposition_score": 2,
         "scorers": []
+    },
+    {
+        "opposition": "Firebrands 3",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Lucy Forward",
+                "goals": 1
+            },
+            {
+                "name": "Anna Bosanko",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Taunton C.S.",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Mel Simmonds",
+                "goals": 1
+            },
+            {
+                "name": "Caitlin McGinn",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bridgwater",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Lucy Forward",
+                "goals": 2
+            },
+            {
+                "name": "Sam Withinshaw",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Knowle",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Lucy Forward",
+                "goals": 1
+            },
+            {
+                "name": "Sam Withinshaw",
+                "goals": 2
+            }
+        ]
     }
 ]
