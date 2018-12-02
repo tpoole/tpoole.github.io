@@ -96,5 +96,23 @@
                 "goals": 2
             }
         ]
+    },
+    {
+        "opposition": "Team Bath Buccaneers 3",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Sam Withinshaw",
+                "goals": 1
+            },
+            {
+                "name": "Sam Edmunds",
+                "goals": 1
+            },
+            {
+                "name": "Milly Overton",
+                "goals": 1
+            }
+        ]
     }
 ]

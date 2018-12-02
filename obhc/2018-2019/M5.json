@@ -37,7 +37,7 @@
                 "goals": 1
             },
             {
-                "name": "Gary A",
+                "name": "Gary Adey",
                 "goals": 1
             },
             {
@@ -80,6 +80,16 @@
             },
             {
                 "name": "Dan Green",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Clifton Robinsons E",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Gary Adey",
                 "goals": 1
             }
         ]

@@ -90,7 +90,7 @@
         "opposition_score": 2,
         "scorers": [
             {
-                "name": "Izzy shore",
+                "name": "Izzy Shore",
                 "goals": 1
             },
             {
@@ -107,5 +107,15 @@
         "opposition": "Keynsham 3",
         "opposition_score": 1,
         "scorers": []
+    },
+    {
+        "opposition": "Knowle 2",
+        "opposition_score": 8,
+        "scorers": [
+            {
+                "name": "Izzy Shore",
+                "goals": 1
+            }
+        ]
     }
 ]

@@ -36,7 +36,7 @@
                 "goals": 1
             },
             {
-                "name": "Lizzy W",
+                "name": "Izzy W",
                 "goals": 1
             }
         ]
@@ -97,5 +97,23 @@
         "opposition": "South Gloucestershire",
         "opposition_score": 2,
         "scorers": []
+    },
+    {
+        "opposition": "Westberries 4",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nina",
+                "goals": 1
+            },
+            {
+                "name": "Izzy W",
+                "goals": 2
+            },
+            {
+                "name": "Charlotte K",
+                "goals": 1
+            }
+        ]
     }
 ]

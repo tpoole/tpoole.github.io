@@ -73,7 +73,7 @@
                 "goals": 2
             },
             {
-                "name": "Edd Thompson",
+                "name": "Edd T",
                 "goals": 1
             }
         ]
@@ -136,6 +136,20 @@
         "scorers": [
             {
                 "name": "Al",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Mendip A",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Pickup",
+                "goals": 2
+            },
+            {
+                "name": "Hep",
                 "goals": 1
             }
         ]

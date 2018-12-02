@@ -132,5 +132,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Royal Wootton Bassett",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Unknown",
+                "goals": 2
+            }
+        ]
     }
 ]

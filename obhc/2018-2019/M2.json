@@ -132,5 +132,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "North Somerset A",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Unknown",
+                "goals": 4
+            }
+        ]
     }
 ]

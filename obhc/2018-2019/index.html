@@ -32,7 +32,14 @@ var chartColorsRGB = [
     [255, 99, 71],
 ]
 
-var getColor = function(index, alpha = 1.0) {
+var getColor = function(index, goals=0) {
+    if (goals == 2) {
+        alpha = 0.7;
+    } else if (goals == 1) {
+        alpha = 0.2;
+    } else {
+        alpha = 1.0;
+    }
     var rgb = chartColorsRGB[index % chartColorsRGB.length];
     return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + alpha + ")";
 }
@@ -258,9 +265,10 @@ var onDataReady = function() {
             return second[1] - first[1];
         });
         for (var iscorer = 0; iscorer < scorersArray.length; iscorer++) {
-            scorersConfig.data.datasets[0].data.push(scorersArray[iscorer][1]);
+            var numGoals = scorersArray[iscorer][1];
+            scorersConfig.data.datasets[0].data.push(numGoals);
             scorersConfig.data.labels.push(scorersArray[iscorer][0]);
-            scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer));
+            scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, numGoals));
         }
 
         var ctx = canvases[0].getContext('2d');
@@ -329,13 +337,7 @@ var onDataReady = function() {
 
         scorersConfig.data.datasets[0].data.push(goals);
 
-        var alpha = 1.0;
-        if (goals == 2) {
-            alpha = 0.4;
-        } else if (goals == 1) {
-            alpha = 0.1;
-        }
-        scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, alpha));
+        scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, goals));
 
         scorersConfig.data.labels.push(scorersArray[iscorer][0]);
     }

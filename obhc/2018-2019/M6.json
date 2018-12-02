@@ -66,5 +66,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Bristol & West E",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jez",
+                "goals": 1
+            }
+        ]
     }
 ]
