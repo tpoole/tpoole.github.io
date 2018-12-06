@@ -108,8 +108,16 @@
         "opposition_score": 0,
         "scorers": [
             {
-                "name": "Unknown",
-                "goals": 3
+                "name": "Quest",
+                "goals": 1
+            },
+            {
+                "name": "Dylan Kissell",
+                "goals": 1
+            },
+            {
+                "name": "Charlie de la Lynde",
+                "goals": 1
             }
         ]
     },
@@ -118,8 +126,12 @@
         "opposition_score": 0,
         "scorers": [
             {
-                "name": "Unknown",
-                "goals": 5
+                "name": "Charlie B",
+                "goals": 2
+            },
+            {
+                "name": "Dave McGinty",
+                "goals": 3
             }
         ]
     },
@@ -138,8 +150,20 @@
         "opposition_score": 0,
         "scorers": [
             {
-                "name": "Unknown",
-                "goals": 4
+                "name": "Dave McGinty",
+                "goals": 1
+            },
+            {
+                "name": "Dylan",
+                "goals": 1
+            },
+            {
+                "name": "Joe Hufford",
+                "goals": 1
+            },
+            {
+                "name": "Ciaran",
+                "goals": 1
             }
         ]
     }

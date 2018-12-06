@@ -138,8 +138,12 @@
         "opposition_score": 1,
         "scorers": [
             {
-                "name": "Unknown",
-                "goals": 2
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
             }
         ]
     }
