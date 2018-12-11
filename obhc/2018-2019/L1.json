@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "Weston super Mare",
         "opposition_score": 1,
         "scorers": [
             {
@@ -11,15 +10,15 @@
                 "name": "Kolgate",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Weston super Mare"
     },
     {
-        "opposition": "Clifton Robinsons 3",
         "opposition_score": 1,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Clifton Robinsons 3"
     },
     {
-        "opposition": "Taw Valley",
         "opposition_score": 0,
         "scorers": [
             {
@@ -34,15 +33,15 @@
                 "name": "Lara",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Taw Valley"
     },
     {
-        "opposition": "Mendip",
         "opposition_score": 2,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Mendip"
     },
     {
-        "opposition": "Firebrands 3",
         "opposition_score": 6,
         "scorers": [
             {
@@ -53,10 +52,10 @@
                 "name": "Anna Bosanko",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Firebrands 3"
     },
     {
-        "opposition": "Taunton C.S.",
         "opposition_score": 4,
         "scorers": [
             {
@@ -67,10 +66,10 @@
                 "name": "Caitlin McGinn",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Taunton C.S."
     },
     {
-        "opposition": "Bridgwater",
         "opposition_score": 1,
         "scorers": [
             {
@@ -81,10 +80,10 @@
                 "name": "Sam Withinshaw",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bridgwater"
     },
     {
-        "opposition": "Knowle",
         "opposition_score": 0,
         "scorers": [
             {
@@ -95,10 +94,10 @@
                 "name": "Sam Withinshaw",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Knowle"
     },
     {
-        "opposition": "Team Bath Buccaneers 3",
         "opposition_score": 4,
         "scorers": [
             {
@@ -113,6 +112,7 @@
                 "name": "Milly Overton",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Team Bath Buccaneers 3"
     }
 ]

@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "Bridgwater A",
         "opposition_score": 1,
         "scorers": [
             {
@@ -15,45 +14,45 @@
                 "name": "Robbo",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bridgwater A"
     },
     {
-        "opposition": "Firebrands C",
         "opposition_score": 1,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Firebrands C"
     },
     {
-        "opposition": "Bristol & West C",
         "opposition_score": 1,
         "scorers": [
             {
                 "name": "Mark C",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bristol & West C"
     },
     {
-        "opposition": "Westbury and UB C",
         "opposition_score": 2,
         "scorers": [
             {
                 "name": "Nat",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Westbury and UB C"
     },
     {
-        "opposition": "North Somerset A",
         "opposition_score": 1,
         "scorers": [
             {
                 "name": "Robbo",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "North Somerset A"
     },
     {
-        "opposition": "Firebrands D",
         "opposition_score": 2,
         "scorers": [
             {
@@ -72,20 +71,20 @@
                 "name": "Steve S",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Firebrands D"
     },
     {
-        "opposition": "Clifton Robinsons D",
         "opposition_score": 4,
         "scorers": [
             {
                 "name": "Robbo",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Clifton Robinsons D"
     },
     {
-        "opposition": "Shepton Mallet A",
         "opposition_score": 3,
         "scorers": [
             {
@@ -96,10 +95,10 @@
                 "name": "Nat",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Shepton Mallet A"
     },
     {
-        "opposition": "Westbury and UB B",
         "opposition_score": 0,
         "scorers": [
             {
@@ -114,11 +113,17 @@
                 "name": "Nat",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Westbury and UB B"
     },
     {
-        "opposition": "Bristol University C",
         "opposition_score": 3,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Bristol University C"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [],
+        "opposition": "Old Bristolians A"
     }
 ]

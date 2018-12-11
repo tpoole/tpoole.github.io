@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "Nailsea 2",
         "opposition_score": 5,
         "scorers": [
             {
@@ -11,15 +10,15 @@
                 "name": "Ali Strutt",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Nailsea 2"
     },
     {
-        "opposition": "North Somerset 2",
         "opposition_score": 4,
-        "scorers": []
+        "scorers": [],
+        "opposition": "North Somerset 2"
     },
     {
-        "opposition": "Redland 4",
         "opposition_score": 0,
         "scorers": [
             {
@@ -30,10 +29,10 @@
                 "name": "Charlotte K",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Redland 4"
     },
     {
-        "opposition": "Winscombe 5",
         "opposition_score": 0,
         "scorers": [
             {
@@ -48,10 +47,10 @@
                 "name": "Izzy Shore",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Winscombe 5"
     },
     {
-        "opposition": "Knowle 3",
         "opposition_score": 0,
         "scorers": [
             {
@@ -78,15 +77,15 @@
                 "name": "Lisa Parker",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Knowle 3"
     },
     {
-        "opposition": "Westberries 5",
         "opposition_score": 2,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Westberries 5"
     },
     {
-        "opposition": "Bristol Bluebirds",
         "opposition_score": 2,
         "scorers": [
             {
@@ -101,21 +100,22 @@
                 "name": "Talia",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bristol Bluebirds"
     },
     {
-        "opposition": "Keynsham 3",
         "opposition_score": 1,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Keynsham 3"
     },
     {
-        "opposition": "Knowle 2",
         "opposition_score": 8,
         "scorers": [
             {
                 "name": "Izzy Shore",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Knowle 2"
     }
 ]

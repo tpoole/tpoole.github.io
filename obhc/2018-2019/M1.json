@@ -1,16 +1,15 @@
 [
     {
-        "opposition": "Somerset Gryphons",
         "opposition_score": 2,
         "scorers": [
             {
                 "name": "Jamie",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Somerset Gryphons"
     },
     {
-        "opposition": "Taunton Vale B",
         "opposition_score": 1,
         "scorers": [
             {
@@ -21,10 +20,10 @@
                 "name": "Charlie B",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Taunton Vale B"
     },
     {
-        "opposition": "Westbury and UB A",
         "opposition_score": 3,
         "scorers": [
             {
@@ -39,10 +38,10 @@
                 "name": "Henry",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Westbury and UB A"
     },
     {
-        "opposition": "Team Bath Buccs C",
         "opposition_score": 2,
         "scorers": [
             {
@@ -57,10 +56,10 @@
                 "name": "Matt Walker",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Team Bath Buccs C"
     },
     {
-        "opposition": "City of Bath A",
         "opposition_score": 0,
         "scorers": [
             {
@@ -79,20 +78,20 @@
                 "name": "Olly Davis",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "City of Bath A"
     },
     {
-        "opposition": "Bridgwater",
         "opposition_score": 4,
         "scorers": [
             {
                 "name": "Jamie",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bridgwater"
     },
     {
-        "opposition": "Firebrands B",
         "opposition_score": 0,
         "scorers": [
             {
@@ -103,20 +102,20 @@
                 "name": "Jim Hughes",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Firebrands B"
     },
     {
-        "opposition": "Bristol UWE",
         "opposition_score": 2,
         "scorers": [
             {
                 "name": "Jamie",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Bristol UWE"
     },
     {
-        "opposition": "Mid Somerset",
         "opposition_score": 0,
         "scorers": [
             {
@@ -131,10 +130,10 @@
                 "name": "Nathan",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Mid Somerset"
     },
     {
-        "opposition": "Royal Wootton Bassett",
         "opposition_score": 1,
         "scorers": [
             {
@@ -145,6 +144,25 @@
                 "name": "Nathan",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Royal Wootton Bassett"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Alex",
+                "goals": 1
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            }
+        ],
+        "opposition": "Chippenham A"
     }
 ]

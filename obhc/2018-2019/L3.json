@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "Wick 2",
         "opposition_score": 0,
         "scorers": [
             {
@@ -15,20 +14,20 @@
                 "name": "Alice",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Wick 2"
     },
     {
-        "opposition": "Yate 3",
         "opposition_score": 2,
         "scorers": [
             {
                 "name": "Nina",
                 "goals": 2
             }
-        ]
+        ],
+        "opposition": "Yate 3"
     },
     {
-        "opposition": "Wotton under Edge 2",
         "opposition_score": 1,
         "scorers": [
             {
@@ -39,10 +38,10 @@
                 "name": "Izzy W",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Wotton under Edge 2"
     },
     {
-        "opposition": "Thornbury",
         "opposition_score": 2,
         "scorers": [
             {
@@ -57,20 +56,20 @@
                 "name": "Kate G",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Thornbury"
     },
     {
-        "opposition": "Bristol and West",
         "opposition_score": 7,
         "scorers": [
             {
                 "name": "Kate G",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bristol and West"
     },
     {
-        "opposition": "Dursley",
         "opposition_score": 6,
         "scorers": [
             {
@@ -81,25 +80,25 @@
                 "name": "Poppy",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Dursley"
     },
     {
-        "opposition": "Avonmouth",
         "opposition_score": 4,
         "scorers": [
             {
                 "name": "Ali Strutt",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Avonmouth"
     },
     {
-        "opposition": "South Gloucestershire",
         "opposition_score": 2,
-        "scorers": []
+        "scorers": [],
+        "opposition": "South Gloucestershire"
     },
     {
-        "opposition": "Westberries 4",
         "opposition_score": 2,
         "scorers": [
             {
@@ -114,6 +113,7 @@
                 "name": "Charlotte K",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Westberries 4"
     }
 ]

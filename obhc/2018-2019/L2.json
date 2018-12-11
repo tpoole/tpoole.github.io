@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "North Somerset",
         "opposition_score": 3,
         "scorers": [
             {
@@ -11,10 +10,10 @@
                 "name": "Jamey Wallace",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "North Somerset"
     },
     {
-        "opposition": "Frome 2",
         "opposition_score": 2,
         "scorers": [
             {
@@ -25,10 +24,10 @@
                 "name": "Kirstie",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Frome 2"
     },
     {
-        "opposition": "Jaspers 2",
         "opposition_score": 2,
         "scorers": [
             {
@@ -43,10 +42,10 @@
                 "name": "Lis",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Jaspers 2"
     },
     {
-        "opposition": "Cheddar",
         "opposition_score": 1,
         "scorers": [
             {
@@ -57,10 +56,10 @@
                 "name": "Ciara McGinn",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Cheddar"
     },
     {
-        "opposition": "Mendip 2",
         "opposition_score": 1,
         "scorers": [
             {
@@ -75,36 +74,37 @@
                 "name": "Ali Strutt",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Mendip 2"
     },
     {
-        "opposition": "Keynsham",
         "opposition_score": 3,
         "scorers": [
             {
                 "name": "Ciara McGinn",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Keynsham"
     },
     {
-        "opposition": "Firebrands 4",
         "opposition_score": 0,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Firebrands 4"
     },
     {
-        "opposition": "Shepton Mallet 2",
         "opposition_score": 1,
         "scorers": [
             {
                 "name": "Kolgate",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Shepton Mallet 2"
     },
     {
-        "opposition": "Somerset Gryphons 2",
         "opposition_score": 4,
-        "scorers": []
+        "scorers": [],
+        "opposition": "Somerset Gryphons 2"
     }
 ]

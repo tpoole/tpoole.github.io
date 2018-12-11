@@ -1,6 +1,5 @@
 [
     {
-        "opposition": "Firebrands D",
         "opposition_score": 0,
         "scorers": [
             {
@@ -15,10 +14,10 @@
                 "name": "Dylan Kissell",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Firebrands D"
     },
     {
-        "opposition": "Bridgwater A",
         "opposition_score": 0,
         "scorers": [
             {
@@ -37,10 +36,10 @@
                 "name": "Dylan Kissell",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bridgwater A"
     },
     {
-        "opposition": "Clifton Robinsons D",
         "opposition_score": 3,
         "scorers": [
             {
@@ -55,10 +54,10 @@
                 "name": "Jasper",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Clifton Robinsons D"
     },
     {
-        "opposition": "Firebrands C",
         "opposition_score": 2,
         "scorers": [
             {
@@ -77,20 +76,20 @@
                 "name": "Opponent 1",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Firebrands C"
     },
     {
-        "opposition": "Shepton Mallet A",
         "opposition_score": 1,
         "scorers": [
             {
                 "name": "James Bullen",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Shepton Mallet A"
     },
     {
-        "opposition": "Bristol & West C",
         "opposition_score": 3,
         "scorers": [
             {
@@ -101,10 +100,10 @@
                 "name": "James Bullen",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bristol & West C"
     },
     {
-        "opposition": "Westbury and UB B",
         "opposition_score": 0,
         "scorers": [
             {
@@ -119,10 +118,10 @@
                 "name": "Charlie de la Lynde",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Westbury and UB B"
     },
     {
-        "opposition": "Westbury and UB C",
         "opposition_score": 0,
         "scorers": [
             {
@@ -133,20 +132,20 @@
                 "name": "Dave McGinty",
                 "goals": 3
             }
-        ]
+        ],
+        "opposition": "Westbury and UB C"
     },
     {
-        "opposition": "Bristol University C",
         "opposition_score": 5,
         "scorers": [
             {
                 "name": "Owen Mills",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "Bristol University C"
     },
     {
-        "opposition": "North Somerset A",
         "opposition_score": 0,
         "scorers": [
             {
@@ -165,6 +164,21 @@
                 "name": "Ciaran",
                 "goals": 1
             }
-        ]
+        ],
+        "opposition": "North Somerset A"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 1
+            },
+            {
+                "name": "Marcus",
+                "goals": 1
+            }
+        ],
+        "opposition": "Old Bristolians B"
     }
 ]
