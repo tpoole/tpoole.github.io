@@ -114,5 +114,27 @@
             }
         ],
         "opposition": "Team Bath Buccaneers 3"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Lucy Forward",
+                "goals": 1
+            },
+            {
+                "name": "Grace Light",
+                "goals": 1
+            },
+            {
+                "name": "Lara Livingstone",
+                "goals": 1
+            },
+            {
+                "name": "Mel Simmonds",
+                "goals": 1
+            }
+        ],
+        "opposition": "Weston super Mare"
     }
 ]

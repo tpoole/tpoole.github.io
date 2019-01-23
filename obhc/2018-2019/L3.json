@@ -115,5 +115,27 @@
             }
         ],
         "opposition": "Westberries 4"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Nina",
+                "goals": 2
+            },
+            {
+                "name": "Izzy W",
+                "goals": 2
+            },
+            {
+                "name": "Maddie",
+                "goals": 2
+            },
+            {
+                "name": "Izzy Shore",
+                "goals": 1
+            }
+        ],
+        "opposition": "Wick 2"
     }
 ]

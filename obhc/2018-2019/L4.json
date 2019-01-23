@@ -117,5 +117,24 @@
             }
         ],
         "opposition": "Knowle 2"
+    },
+    {
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Sienna",
+                "goals": 1
+            },
+            {
+                "name": "Eve",
+                "goals": 1
+            }
+        ],
+        "opposition": "Nailsea 2"
+    },
+    {
+        "opposition_score": 4,
+        "scorers": [],
+        "opposition": "North Somerset 2"
     }
 ]

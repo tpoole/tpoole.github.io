@@ -81,5 +81,33 @@
         "opposition_score": 3,
         "scorers": [],
         "opposition": "Clifton Robinsons E"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jezz",
+                "goals": 1
+            },
+            {
+                "name": "Nat",
+                "goals": 2
+            }
+        ],
+        "opposition": "Westbury and UB E"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Will D",
+                "goals": 1
+            },
+            {
+                "name": "Heff H",
+                "goals": 1
+            }
+        ],
+        "opposition": "Westbury and UB F"
     }
 ]

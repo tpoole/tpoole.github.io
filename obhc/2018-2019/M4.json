@@ -167,5 +167,41 @@
             }
         ],
         "opposition": "Weston-s-Mare A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ],
+        "opposition": "Somerset Gryphons A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            },
+            {
+                "name": "Mike T",
+                "goals": 1
+            },
+            {
+                "name": "Patrizio",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bristol & West D"
     }
 ]

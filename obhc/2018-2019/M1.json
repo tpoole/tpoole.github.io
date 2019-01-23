@@ -164,5 +164,37 @@
             }
         ],
         "opposition": "Chippenham A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Dan",
+                "goals": 1
+            }
+        ],
+        "opposition": "Somerset Gryphons"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Nathan",
+                "goals": 2
+            },
+            {
+                "name": "Orlando",
+                "goals": 1
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            }
+        ],
+        "opposition": "Taunton Vale B"
     }
 ]

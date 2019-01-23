@@ -125,5 +125,37 @@
         "opposition_score": 2,
         "scorers": [],
         "opposition": "Old Bristolians A"
+    },
+    {
+        "opposition_score": 8,
+        "scorers": [
+            {
+                "name": "Dom Z",
+                "goals": 1
+            },
+            {
+                "name": "Opponent 2",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bridgwater A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nick Heal",
+                "goals": 1
+            },
+            {
+                "name": "Nick Tew",
+                "goals": 1
+            },
+            {
+                "name": "Jack Tawney",
+                "goals": 1
+            }
+        ],
+        "opposition": "Firebrands C"
     }
 ]
