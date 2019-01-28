@@ -109,5 +109,15 @@
             }
         ],
         "opposition": "Westbury and UB F"
+    },
+    {
+        "opposition": "South Glos. B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Gil",
+                "goals": 1
+            }
+        ]
     }
 ]

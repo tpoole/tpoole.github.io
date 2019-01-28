@@ -136,5 +136,31 @@
         "opposition_score": 4,
         "scorers": [],
         "opposition": "North Somerset 2"
+    },
+    {
+        "opposition": "Redland 4",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Lisa Parker",
+                "goals": 3
+            },
+            {
+                "name": "Lou",
+                "goals": 1
+            },
+            {
+                "name": "Eve",
+                "goals": 1
+            },
+            {
+                "name": "Talia",
+                "goals": 1
+            },
+            {
+                "name": "Pam",
+                "goals": 1
+            }
+        ]
     }
 ]

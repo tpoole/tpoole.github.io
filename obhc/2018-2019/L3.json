@@ -137,5 +137,15 @@
             }
         ],
         "opposition": "Wick 2"
+    },
+    {
+        "opposition": "Yate 3",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Nina",
+                "goals": 3
+            }
+        ]
     }
 ]

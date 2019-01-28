@@ -203,5 +203,19 @@
             }
         ],
         "opposition": "Bristol & West D"
+    },
+    {
+        "opposition": "South Glos. A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave Scott",
+                "goals": 2
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ]
     }
 ]

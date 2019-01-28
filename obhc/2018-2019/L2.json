@@ -111,5 +111,15 @@
         "opposition_score": 6,
         "scorers": [],
         "opposition": "North Somerset"
+    },
+    {
+        "opposition": "Frome 2",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 1
+            }
+        ]
     }
 ]

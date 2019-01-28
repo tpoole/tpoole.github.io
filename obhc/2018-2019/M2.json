@@ -204,5 +204,23 @@
             }
         ],
         "opposition": "Bridgwater A"
+    },
+    {
+        "opposition": "Clifton Robinsons D",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Jim Hughes",
+                "goals": 2
+            },
+            {
+                "name": "James Bullen",
+                "goals": 1
+            },
+            {
+                "name": "Dave McGinty",
+                "goals": 1
+            }
+        ]
     }
 ]

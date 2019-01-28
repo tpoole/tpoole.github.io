@@ -157,5 +157,15 @@
             }
         ],
         "opposition": "Firebrands C"
+    },
+    {
+        "opposition": "Bristol & West C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dom Z",
+                "goals": 1
+            }
+        ]
     }
 ]

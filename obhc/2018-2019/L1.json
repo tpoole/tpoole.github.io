@@ -136,5 +136,15 @@
             }
         ],
         "opposition": "Weston super Mare"
+    },
+    {
+        "opposition": "Clifton Robinsons 3",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Sammy",
+                "goals": 1
+            }
+        ]
     }
 ]

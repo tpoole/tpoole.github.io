@@ -196,5 +196,19 @@
             }
         ],
         "opposition": "Taunton Vale B"
+    },
+    {
+        "opposition": "Westbury and UB A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Charlie B",
+                "goals": 2
+            }
+        ]
     }
 ]
