@@ -167,5 +167,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "North Somerset A",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Rob Figs",
+                "goals": 1
+            }
+        ]
     }
 ]

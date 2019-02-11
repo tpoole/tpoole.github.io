@@ -1,0 +1,243 @@
+[
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 1
+            },
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ],
+        "opposition": "Somerset Gryphons A"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 2
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bristol & West D"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Brooksie",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            }
+        ],
+        "opposition": "South Glos. A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [],
+        "opposition": "Firebrands E"
+    },
+    {
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Mike Summers",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bridgwater B"
+    },
+    {
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Pickup",
+                "goals": 2
+            },
+            {
+                "name": "Edd T",
+                "goals": 1
+            }
+        ],
+        "opposition": "Keynsham A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nick Tew",
+                "goals": 2
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            }
+        ],
+        "opposition": "Westbury and UB D"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Eric",
+                "goals": 1
+            },
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            },
+            {
+                "name": "Hep",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            },
+            {
+                "name": "Alex Hayes",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ],
+        "opposition": "Mid Somerset A"
+    },
+    {
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ],
+        "opposition": "North Somerset B"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Pickup",
+                "goals": 2
+            },
+            {
+                "name": "Hep",
+                "goals": 1
+            }
+        ],
+        "opposition": "Mendip A"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Hep",
+                "goals": 2
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ],
+        "opposition": "Weston-s-Mare A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            }
+        ],
+        "opposition": "Somerset Gryphons A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            },
+            {
+                "name": "Mike T",
+                "goals": 1
+            },
+            {
+                "name": "Patrizio",
+                "goals": 1
+            },
+            {
+                "name": "Dave Scott",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bristol & West D"
+    },
+    {
+        "opposition": "South Glos. A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave Scott",
+                "goals": 2
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bridgwater B",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 2
+            },
+            {
+                "name": "Mike Summers",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            }
+        ]
+    }
+]

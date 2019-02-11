@@ -217,5 +217,27 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Bridgwater B",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Al",
+                "goals": 2
+            },
+            {
+                "name": "Mike Summers",
+                "goals": 1
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            }
+        ]
     }
 ]

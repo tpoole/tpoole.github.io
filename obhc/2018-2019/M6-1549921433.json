@@ -119,5 +119,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Bristol & West E",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Chris Fellows",
+                "goals": 1
+            }
+        ]
     }
 ]

@@ -145,5 +145,15 @@
             }
         ],
         "opposition": "Westbury and UB E"
+    },
+    {
+        "opposition": "Clifton Robinsons E",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Unknown",
+                "goals": 2
+            }
+        ]
     }
 ]

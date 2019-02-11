@@ -3,6 +3,8 @@ from lxml import etree
 
 import io
 import json
+from datetime import datetime
+import subprocess
 
 queries = [
     {
@@ -30,6 +32,14 @@ team_name_map = {
     "Old Bristolians 5": "5",
     "Old Bristolians 6": "6",
 }
+
+timestamp = datetime.utcnow().strftime("%s")
+subprocess.run("git reset HEAD 2018-2019", shell=True, check=True)
+subprocess.run("git rm -rf 2018-2019", shell=True, check=True)
+subprocess.run("rm -rf 2018-2019", shell=True, check=True)
+subprocess.run("mkdir -p 2018-2019", shell=True, check=True)
+subprocess.run("cp 2018-2019-data/*.js 2018-2019/", shell=True, check=True)
+subprocess.run('sed "s/%TIMESTAMP%/{}/" < 2018-2019-data/index.html.in > 2018-2019/index.html'.format(timestamp), shell=True, check=True)
 
 for query in queries:
 
@@ -90,7 +100,7 @@ for query in queries:
 
     for key in results:
         short_team_name = query["team_name_prefix"] + team_name_map[key]
-        data_file_path = "2018-2019/{}.json".format(short_team_name)
+        data_file_path = "2018-2019-data/{}.json".format(short_team_name)
         with open(data_file_path, "r") as f:
             data = json.load(f)
 
@@ -119,10 +129,14 @@ for query in queries:
                     print("Existing: {}".format(old_data))
                     print("New:      {}".format(new_result))
 
-        with open(data_file_path, "w") as f:
+        published_file_path = "2018-2019/{}-{}.json".format(short_team_name, timestamp)
+        with open(published_file_path, "w") as f:
             json.dump(data, f, indent=4)
 
         for result in data:
             for scorer in result["scorers"]:
                 if scorer["name"] == "Unknown":
                     print("{} unknown scorer: {}".format(short_team_name, result))
+
+subprocess.run('git add 2018-2019', shell=True, check=True)
+

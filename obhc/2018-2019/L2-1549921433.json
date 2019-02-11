@@ -1,0 +1,125 @@
+[
+    {
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Sophie Parker",
+                "goals": 1
+            },
+            {
+                "name": "Jamey Wallace",
+                "goals": 1
+            }
+        ],
+        "opposition": "North Somerset"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sophie Parker",
+                "goals": 1
+            },
+            {
+                "name": "Kirstie",
+                "goals": 1
+            }
+        ],
+        "opposition": "Frome 2"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Kirstie",
+                "goals": 2
+            },
+            {
+                "name": "Ellie",
+                "goals": 1
+            },
+            {
+                "name": "Lis",
+                "goals": 1
+            }
+        ],
+        "opposition": "Jaspers 2"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Becks Law",
+                "goals": 1
+            },
+            {
+                "name": "Ciara McGinn",
+                "goals": 1
+            }
+        ],
+        "opposition": "Cheddar"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Anna Bosanko",
+                "goals": 1
+            },
+            {
+                "name": "Kirstie",
+                "goals": 1
+            },
+            {
+                "name": "Ali Strutt",
+                "goals": 1
+            }
+        ],
+        "opposition": "Mendip 2"
+    },
+    {
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Ciara McGinn",
+                "goals": 1
+            }
+        ],
+        "opposition": "Keynsham"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [],
+        "opposition": "Firebrands 4"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 1
+            }
+        ],
+        "opposition": "Shepton Mallet 2"
+    },
+    {
+        "opposition_score": 4,
+        "scorers": [],
+        "opposition": "Somerset Gryphons 2"
+    },
+    {
+        "opposition_score": 6,
+        "scorers": [],
+        "opposition": "North Somerset"
+    },
+    {
+        "opposition": "Frome 2",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 1
+            }
+        ]
+    }
+]

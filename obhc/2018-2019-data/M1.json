@@ -173,7 +173,7 @@
                 "goals": 2
             },
             {
-                "name": "Dan",
+                "name": "Dan Griffin",
                 "goals": 1
             }
         ],
@@ -208,6 +208,34 @@
             {
                 "name": "Charlie B",
                 "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "City of Bath A",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Jasper",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Team Bath Buccs C",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 4
+            },
+            {
+                "name": "Henry",
+                "goals": 1
+            },
+            {
+                "name": "Henry",
+                "goals": 1
             }
         ]
     }

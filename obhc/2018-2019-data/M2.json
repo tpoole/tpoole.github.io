@@ -153,7 +153,7 @@
                 "goals": 1
             },
             {
-                "name": "Dylan",
+                "name": "Dylan Kissell",
                 "goals": 1
             },
             {
@@ -219,6 +219,24 @@
             },
             {
                 "name": "Dave McGinty",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Shepton Mallet A",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 3
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            },
+            {
+                "name": "Dylan Kissell",
                 "goals": 1
             }
         ]
