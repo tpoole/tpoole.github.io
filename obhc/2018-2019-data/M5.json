@@ -151,8 +151,12 @@
         "opposition_score": 3,
         "scorers": [
             {
-                "name": "Unknown",
-                "goals": 2
+                "name": "Steve Pearce",
+                "goals": 1
+            },
+            {
+                "name": "Jake Clements",
+                "goals": 1
             }
         ]
     }
