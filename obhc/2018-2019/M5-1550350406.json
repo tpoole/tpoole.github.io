@@ -159,5 +159,23 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB F",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 1
+            },
+            {
+                "name": "Simon P",
+                "goals": 1
+            },
+            {
+                "name": "Laurance M",
+                "goals": 1
+            }
+        ]
     }
 ]

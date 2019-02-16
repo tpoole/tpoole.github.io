@@ -238,5 +238,19 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Bridgwater",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Owen Mills",
+                "goals": 1
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
+            }
+        ]
     }
 ]

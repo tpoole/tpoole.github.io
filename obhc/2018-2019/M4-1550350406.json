@@ -239,5 +239,37 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Firebrands E",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Sam Evans",
+                "goals": 3
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            },
+            {
+                "name": "Pickup",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Keynsham A",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Alex Hayes",
+                "goals": 2
+            },
+            {
+                "name": "Simon Tovey",
+                "goals": 1
+            }
+        ]
     }
 ]

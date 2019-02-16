@@ -177,5 +177,23 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Firebrands D",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Nick Tew",
+                "goals": 1
+            },
+            {
+                "name": "Nick Heal",
+                "goals": 1
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
     }
 ]

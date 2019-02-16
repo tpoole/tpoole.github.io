@@ -83,7 +83,7 @@
         "opposition_score": 1,
         "scorers": [
             {
-                "name": "James Bullen",
+                "name": "Quest",
                 "goals": 1
             }
         ],
@@ -97,7 +97,7 @@
                 "goals": 1
             },
             {
-                "name": "James Bullen",
+                "name": "Quest",
                 "goals": 1
             }
         ],
@@ -214,7 +214,7 @@
                 "goals": 2
             },
             {
-                "name": "James Bullen",
+                "name": "Quest",
                 "goals": 1
             },
             {
@@ -237,6 +237,20 @@
             },
             {
                 "name": "Dylan Kissell",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol & West C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 3
+            },
+            {
+                "name": "Tom Poole",
                 "goals": 1
             }
         ]

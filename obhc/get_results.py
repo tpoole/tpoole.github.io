@@ -129,14 +129,17 @@ for query in queries:
                     print("Existing: {}".format(old_data))
                     print("New:      {}".format(new_result))
 
-        published_file_path = "2018-2019/{}-{}.json".format(short_team_name, timestamp)
-        with open(published_file_path, "w") as f:
+        with open(data_file_path, "w") as f:
             json.dump(data, f, indent=4)
 
         for result in data:
             for scorer in result["scorers"]:
                 if scorer["name"] == "Unknown":
                     print("{} unknown scorer: {}".format(short_team_name, result))
+
+        published_file_path = "2018-2019/{}-{}.json".format(short_team_name, timestamp)
+        subprocess.run('cp {} {}'.format(data_file_path, published_file_path),
+                       shell=True, check=True)
 
 subprocess.run('git add 2018-2019', shell=True, check=True)
 
