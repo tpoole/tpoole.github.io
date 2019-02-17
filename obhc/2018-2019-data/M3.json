@@ -195,5 +195,19 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Nick Heal",
+                "goals": 2
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
     }
 ]

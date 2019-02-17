@@ -254,5 +254,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Firebrands C",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Matt Mayes",
+                "goals": 1
+            }
+        ]
     }
 ]
