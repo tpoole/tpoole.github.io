@@ -1,0 +1,270 @@
+[
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            }
+        ],
+        "opposition": "Somerset Gryphons"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            }
+        ],
+        "opposition": "Taunton Vale B"
+    },
+    {
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Mike B",
+                "goals": 1
+            },
+            {
+                "name": "Henry",
+                "goals": 1
+            }
+        ],
+        "opposition": "Westbury and UB A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Ciaran",
+                "goals": 2
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 2
+            },
+            {
+                "name": "Matt Walker",
+                "goals": 1
+            }
+        ],
+        "opposition": "Team Bath Buccs C"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 5
+            },
+            {
+                "name": "Jasper",
+                "goals": 1
+            },
+            {
+                "name": "Mike B",
+                "goals": 1
+            },
+            {
+                "name": "Olly Davis",
+                "goals": 1
+            }
+        ],
+        "opposition": "City of Bath A"
+    },
+    {
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            }
+        ],
+        "opposition": "Bridgwater"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Jim Hughes",
+                "goals": 1
+            }
+        ],
+        "opposition": "Firebrands B"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            }
+        ],
+        "opposition": "Bristol UWE"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 1
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
+            }
+        ],
+        "opposition": "Mid Somerset"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
+            }
+        ],
+        "opposition": "Royal Wootton Bassett"
+    },
+    {
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Alex",
+                "goals": 1
+            },
+            {
+                "name": "Charlie B",
+                "goals": 1
+            }
+        ],
+        "opposition": "Chippenham A"
+    },
+    {
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Dan Griffin",
+                "goals": 1
+            }
+        ],
+        "opposition": "Somerset Gryphons"
+    },
+    {
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Nathan",
+                "goals": 2
+            },
+            {
+                "name": "Orlando",
+                "goals": 1
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            }
+        ],
+        "opposition": "Taunton Vale B"
+    },
+    {
+        "opposition": "Westbury and UB A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            },
+            {
+                "name": "Charlie B",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "City of Bath A",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Jasper",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Team Bath Buccs C",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 4
+            },
+            {
+                "name": "Henry",
+                "goals": 1
+            },
+            {
+                "name": "Henry",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bridgwater",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Owen Mills",
+                "goals": 1
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Firebrands B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Nathan",
+                "goals": 1
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            }
+        ]
+    }
+]

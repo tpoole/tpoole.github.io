@@ -32,13 +32,25 @@ var chartColorsRGB = [
     [255, 99, 71],
 ]
 
-var getColor = function(index, goals=0) {
-    if (goals == 2) {
-        alpha = 0.7;
-    } else if (goals == 1) {
-        alpha = 0.2;
-    } else {
+var getColor = function(index, goals=-1) {
+    if (goals == -1 || goals > 3) {
         alpha = 1.0;
+    } else if (goals > 1) {
+        alpha = 0.65;
+    } else {
+        alpha = 0.2;
+    }
+    var rgb = chartColorsRGB[index % chartColorsRGB.length];
+    return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + alpha + ")";
+}
+
+var getRateColor = function(index, rate=0) {
+    if (rate > 1.0/3.0) {
+        alpha = 1.0;
+    } else if (rate > 1.0/11.0) {
+        alpha = 0.65;
+    } else {
+        alpha = 0.2;
     }
     var rgb = chartColorsRGB[index % chartColorsRGB.length];
     return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + alpha + ")";
@@ -74,6 +86,37 @@ var pieLabels = function(chart) {
     }
 }
 
+var pieRateLabels = function(chart) {
+    var data = chart.data;
+    if (data.labels.length && data.datasets.length) {
+        return data.labels.map(function(label, i) {
+            var meta = chart.getDatasetMeta(0);
+            var ds = data.datasets[0];
+            var arc = meta.data[i];
+            var custom = arc && arc.custom || {};
+            var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
+            var arcOpts = chart.options.elements.arc;
+            var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
+            var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+            var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+
+            var value = chart.config.data.datasets[arc._datasetIndex].data[arc._index];
+            value = parseFloat(Math.round(value * 100) / 100).toFixed(2);
+
+            return {
+                text: value + ": " + label,
+                fillStyle: fill,
+                strokeStyle: stroke,
+                lineWidth: bw,
+                hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+                index: i
+            };
+        });
+    } else {
+        return [];
+    }
+}
+
 var pointsCharts = {};
 var goalsCharts = {};
 var scorersCharts = {};
@@ -94,6 +137,9 @@ var teamNames = [
 var data = {};
 
 var onDataReady = function() {
+
+    var scoringRateData = {};
+
     for (var iteam = 0; iteam < teamNames.length; iteam++) {
         var teamName = teamNames[iteam]
         var teamData = data[teamName];
@@ -231,6 +277,12 @@ var onDataReady = function() {
                 var scorerData = resultData.scorers[iscorer]
 
                 scorers[scorerData.name] = (scorers[scorerData.name] || 0) + scorerData.goals;
+                if (scorerData.name in scoringRateData) {
+                    scoringRateData[scorerData.name] = [scoringRateData[scorerData.name][0] + scorerData.goals,
+                                                        Math.max(scoringRateData[scorerData.name][1], teamData.length)];
+                } else {
+                    scoringRateData[scorerData.name] = [scorerData.goals, teamData.length];
+                }
                 goalCount += scorerData.goals;
             }
 
@@ -281,7 +333,7 @@ var onDataReady = function() {
         scorersCharts[teamName] = new Chart(ctx, scorersConfig);
     }
 
-    var scorersConfig = {
+    var clubScorersConfig = {
         type: 'doughnut',
         data: {
             datasets: [{
@@ -306,7 +358,7 @@ var onDataReady = function() {
                 animateRotate: true,
             }
         }
-    };
+    }
 
     var scorers = {};
     for (var chartName in scorersCharts) {
@@ -332,41 +384,105 @@ var onDataReady = function() {
 
     for (var iscorer = 0; iscorer < scorersArray.length; iscorer++) {
         var goals = scorersArray[iscorer][1];
-
         goalsTotal += goals;
-
-        scorersConfig.data.datasets[0].data.push(goals);
-
-        scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, goals));
-
-        scorersConfig.data.labels.push(scorersArray[iscorer][0]);
+        clubScorersConfig.data.datasets[0].data.push(goals);
+        clubScorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, goals));
+        clubScorersConfig.data.labels.push(scorersArray[iscorer][0]);
     }
 
     console.log("Total number of goals: " + goalsTotal);
 
-    var container = document.createElement("div");
+    var scoringRateConfig = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [],
+                backgroundColor: [],
+            }],
+            labels: [],
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'right',
+                labels: {
+                    generateLabels: pieRateLabels,
+                }
+            },
+            title: {
+                display: false,
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true,
+            }
+        }
+    }
 
-    var title = document.createElement("h3");
-    title.textContent = "OBHC Goalscorers";
-    title.setAttribute("style", "text-align: center;");
-    container.appendChild(title);
+    orderedScoringRateData = []
+    for (var key in scoringRateData) {
+        if (scoringRateData.hasOwnProperty(key)) {
+            orderedScoringRateData.push([key, scoringRateData[key][0] / scoringRateData[key][1]])
+        }
+    }
+    orderedScoringRateData.sort(function(first, second) {
+        return second[1] - first[1];
+    });
 
-    var chartContainer = document.createElement("div");
+    for (var iscorer = 0; iscorer < orderedScoringRateData.length; iscorer++) {
+        var rate = orderedScoringRateData[iscorer][1];
+        scoringRateConfig.data.datasets[0].data.push(rate);
+        scoringRateConfig.data.datasets[0].backgroundColor.push(getRateColor(iscorer, rate));
+        scoringRateConfig.data.labels.push(orderedScoringRateData[iscorer][0]);
+    }
 
-    var div = document.createElement("div");
-    div.setAttribute("style", "max-width: 1000px; margin-right: auto; margin-left: auto; display: block;");
+    var scoringRateContainer = document.createElement("div");
 
-    var canvas = document.createElement("canvas");
-    div.appendChild(canvas);
+    var scoringRateTitle = document.createElement("h3");
+    scoringRateTitle.textContent = "Goals Per Game";
+    scoringRateTitle.setAttribute("style", "text-align: center;");
+    scoringRateContainer.appendChild(scoringRateTitle);
 
-    chartContainer.appendChild(div);
+    var scoringRateChartContainer = document.createElement("div");
 
-    container.appendChild(chartContainer);
+    var scoringRateDiv = document.createElement("div");
+    scoringRateDiv.setAttribute("style", "max-width: 1000px; margin-right: auto; margin-left: auto; display: block;");
 
-    document.body.insertBefore(container, document.body.firstChild);
+    var scoringRateCanvas = document.createElement("canvas");
+    scoringRateDiv.appendChild(scoringRateCanvas);
 
-    var ctx = canvas.getContext('2d');
-    scorersCharts["Club Goalscorers"] = new Chart(ctx, scorersConfig);
+    scoringRateChartContainer.appendChild(scoringRateDiv);
+
+    scoringRateContainer.appendChild(scoringRateChartContainer);
+
+    document.body.insertBefore(scoringRateContainer, document.body.firstChild);
+
+    var scoringRateCtx = scoringRateCanvas.getContext('2d');
+    scorersCharts["Club Goalscoring Rates"] = new Chart(scoringRateCtx, scoringRateConfig);
+
+    var scorersContainer = document.createElement("div");
+
+    var scorersTitle = document.createElement("h3");
+    scorersTitle.textContent = "Club Goalscorers";
+    scorersTitle.setAttribute("style", "text-align: center;");
+    scorersContainer.appendChild(scorersTitle);
+
+    var scorersChartContainer = document.createElement("div");
+
+    var scorersDiv = document.createElement("div");
+    scorersDiv.setAttribute("style", "max-width: 1000px; margin-right: auto; margin-left: auto; display: block;");
+
+    var scorersCanvas = document.createElement("canvas");
+    scorersDiv.appendChild(scorersCanvas);
+
+    scorersChartContainer.appendChild(scorersDiv);
+
+    scorersContainer.appendChild(scorersChartContainer);
+
+    document.body.insertBefore(scorersContainer, document.body.firstChild);
+
+    var scorersCtx = scorersCanvas.getContext('2d');
+    scorersCharts["Club Goalscorers"] = new Chart(scorersCtx, clubScorersConfig);
 };
 
 var getData = function(teamName) {
@@ -377,7 +493,7 @@ var getData = function(teamName) {
         request.overrideMimeType("application/json");
     }
 
-    var path = teamName[0] + teamName[teamName.length -1] + "-1551270165" + ".json";
+    var path = teamName[0] + teamName[teamName.length -1] + "-1551478753" + ".json";
     request.open("GET", path, true);
 
     request.onreadystatechange = function() {
