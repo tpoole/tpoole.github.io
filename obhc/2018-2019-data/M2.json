@@ -264,5 +264,27 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB B",
+        "opposition_score": 4,
+        "scorers": [
+            {
+                "name": "Quest",
+                "goals": 2
+            },
+            {
+                "name": "Jim Hughes",
+                "goals": 2
+            },
+            {
+                "name": "Dylan Kissell",
+                "goals": 1
+            },
+            {
+                "name": "Jack H",
+                "goals": 1
+            }
+        ]
     }
 ]

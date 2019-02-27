@@ -121,5 +121,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Cheddar",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 1
+            }
+        ]
     }
 ]

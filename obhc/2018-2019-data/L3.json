@@ -152,5 +152,10 @@
         "opposition": "Wotton under Edge 2",
         "opposition_score": 4,
         "scorers": []
+    },
+    {
+        "opposition": "Thornbury",
+        "opposition_score": 1,
+        "scorers": []
     }
 ]

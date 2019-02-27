@@ -146,5 +146,15 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Mendip",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Florrie",
+                "goals": 1
+            }
+        ]
     }
 ]

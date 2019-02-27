@@ -162,5 +162,10 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Knowle 3",
+        "opposition_score": 2,
+        "scorers": []
     }
 ]

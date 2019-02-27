@@ -209,5 +209,19 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Clifton Robinsons D",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Robbo",
+                "goals": 2
+            },
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
     }
 ]

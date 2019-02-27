@@ -271,5 +271,10 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB D",
+        "opposition_score": 1,
+        "scorers": []
     }
 ]

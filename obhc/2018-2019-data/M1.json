@@ -252,5 +252,19 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Firebrands B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Nathan",
+                "goals": 1
+            },
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            }
+        ]
     }
 ]
