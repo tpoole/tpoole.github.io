@@ -167,5 +167,51 @@
         "opposition": "Knowle 3",
         "opposition_score": 2,
         "scorers": []
+    },
+    {
+        "opposition": "Westberries 5",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Annabel",
+                "goals": 2
+            },
+            {
+                "name": "Lisa",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol Bluebirds",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Pam",
+                "goals": 1
+            },
+            {
+                "name": "Sam Withinshaw",
+                "goals": 2
+            },
+            {
+                "name": "Eve",
+                "goals": 1
+            },
+            {
+                "name": "Sienna",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Keynsham 3",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Lou",
+                "goals": 1
+            }
+        ]
     }
 ]

@@ -223,5 +223,57 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Shepton Mallet A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Kiaran",
+                "goals": 1
+            },
+            {
+                "name": "Jack Tawney",
+                "goals": 1
+            },
+            {
+                "name": "Robbo",
+                "goals": 1
+            },
+            {
+                "name": "Nick Heal",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB B",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Nick Tew",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol University C",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Chris Washington",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Old Bristolians A",
+        "opposition_score": 6,
+        "scorers": [
+            {
+                "name": "Nat",
+                "goals": 1
+            }
+        ]
     }
 ]

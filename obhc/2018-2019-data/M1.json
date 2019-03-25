@@ -266,5 +266,57 @@
                 "goals": 2
             }
         ]
+    },
+    {
+        "opposition": "Bristol UWE",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Ollie K",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Mid Somerset",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 1
+            },
+            {
+                "name": "Jim Hughes",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Royal Wootton Bassett",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Jamie",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Chippenham A",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Owen Mills",
+                "goals": 2
+            },
+            {
+                "name": "Nathan",
+                "goals": 1
+            }
+        ]
     }
 ]

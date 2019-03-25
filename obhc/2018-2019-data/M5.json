@@ -182,5 +182,30 @@
         "opposition": "Old Bristolians E",
         "opposition_score": 0,
         "scorers": []
+    },
+    {
+        "opposition": "South Glos. B",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Jake Clements",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol & West E",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Gary Adey",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Westbury and UB E",
+        "opposition_score": 1,
+        "scorers": []
     }
 ]

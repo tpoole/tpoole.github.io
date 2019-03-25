@@ -157,5 +157,34 @@
         "opposition": "Thornbury",
         "opposition_score": 1,
         "scorers": []
+    },
+    {
+        "opposition": "Bristol and West",
+        "opposition_score": 3,
+        "scorers": []
+    },
+    {
+        "opposition": "Dursley",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Steph",
+                "goals": 2
+            },
+            {
+                "name": "Izzy W",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Avonmouth",
+        "opposition_score": 4,
+        "scorers": []
+    },
+    {
+        "opposition": "South Gloucestershire",
+        "opposition_score": 6,
+        "scorers": []
     }
 ]

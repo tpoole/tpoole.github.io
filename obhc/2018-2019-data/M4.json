@@ -276,5 +276,57 @@
         "opposition": "Westbury and UB D",
         "opposition_score": 1,
         "scorers": []
+    },
+    {
+        "opposition": "Mid Somerset A",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Simon Tovey",
+                "goals": 2
+            },
+            {
+                "name": "David Jackson",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "North Somerset B",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Pickup",
+                "goals": 2
+            },
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Mendip A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Sam Evans",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Weston-s-Mare A",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Brooksie",
+                "goals": 1
+            },
+            {
+                "name": "Al",
+                "goals": 1
+            }
+        ]
     }
 ]

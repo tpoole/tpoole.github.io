@@ -156,5 +156,66 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Firebrands 3",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Grace Light",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Taunton C.S.",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 1
+            },
+            {
+                "name": "Lara",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Taw Valley",
+        "opposition_score": 5,
+        "scorers": []
+    },
+    {
+        "opposition": "Bridgwater",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Steph",
+                "goals": 4
+            },
+            {
+                "name": "Lucy Forward",
+                "goals": 2
+            }
+        ]
+    },
+    {
+        "opposition": "Knowle",
+        "opposition_score": 0,
+        "scorers": [
+            {
+                "name": "Kolgate",
+                "goals": 2.5
+            },
+            {
+                "name": "Grace Light",
+                "goals": 1
+            },
+            {
+                "name": "Sam Edmunds",
+                "goals": 0.5
+            }
+        ]
     }
 ]

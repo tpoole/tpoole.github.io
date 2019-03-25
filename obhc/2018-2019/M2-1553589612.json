@@ -286,5 +286,69 @@
                 "goals": 1
             }
         ]
+    },
+    {
+        "opposition": "Westbury and UB C",
+        "opposition_score": 3,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Bristol University C",
+        "opposition_score": 2,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 1
+            },
+            {
+                "name": "Jasper",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "North Somerset A",
+        "opposition_score": 5,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 2
+            },
+            {
+                "name": "Harry W",
+                "goals": 1
+            }
+        ]
+    },
+    {
+        "opposition": "Old Bristolians B",
+        "opposition_score": 1,
+        "scorers": [
+            {
+                "name": "Dave McGinty",
+                "goals": 2
+            },
+            {
+                "name": "Ciaran",
+                "goals": 1
+            },
+            {
+                "name": "Dylan",
+                "goals": 1
+            },
+            {
+                "name": "Quest",
+                "goals": 1
+            },
+            {
+                "name": "Jim Hughes",
+                "goals": 1
+            }
+        ]
     }
 ]
