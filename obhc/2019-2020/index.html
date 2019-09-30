@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>OBHC Results</title>
+	<script src="Chart.bundle.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+		h1, h2, h3 {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+var chartColorsRGB = [
+    [255, 99, 132],
+    [255, 159, 64],
+    [255, 205, 86],
+    [75, 192, 192],
+    [54, 162, 235],
+    [153, 102, 255],
+    [186, 85, 211],
+    [255, 99, 71],
+]
+
+var getColor = function(index, goals=-1) {
+    if (goals == -1 || goals > 3) {
+        alpha = 1.0;
+    } else if (goals > 1) {
+        alpha = 0.65;
+    } else {
+        alpha = 0.2;
+    }
+    var rgb = chartColorsRGB[index % chartColorsRGB.length];
+    return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + alpha + ")";
+}
+
+var getRateColor = function(index, rate=0) {
+    if (rate > 1.0/3.0) {
+        alpha = 1.0;
+    } else if (rate > 1.0/11.0) {
+        alpha = 0.65;
+    } else {
+        alpha = 0.2;
+    }
+    var rgb = chartColorsRGB[index % chartColorsRGB.length];
+    return "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + alpha + ")";
+}
+
+var pieLabels = function(chart) {
+    var data = chart.data;
+    if (data.labels.length && data.datasets.length) {
+        return data.labels.map(function(label, i) {
+            var meta = chart.getDatasetMeta(0);
+            var ds = data.datasets[0];
+            var arc = meta.data[i];
+            var custom = arc && arc.custom || {};
+            var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
+            var arcOpts = chart.options.elements.arc;
+            var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
+            var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+            var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+
+            var value = chart.config.data.datasets[arc._datasetIndex].data[arc._index];
+
+            return {
+                text: value + ": " + label,
+                fillStyle: fill,
+                strokeStyle: stroke,
+                lineWidth: bw,
+                hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+                index: i
+            };
+        });
+    } else {
+        return [];
+    }
+}
+
+var pieRateLabels = function(chart) {
+    var data = chart.data;
+    if (data.labels.length && data.datasets.length) {
+        return data.labels.map(function(label, i) {
+            var meta = chart.getDatasetMeta(0);
+            var ds = data.datasets[0];
+            var arc = meta.data[i];
+            var custom = arc && arc.custom || {};
+            var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
+            var arcOpts = chart.options.elements.arc;
+            var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
+            var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+            var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+
+            var value = chart.config.data.datasets[arc._datasetIndex].data[arc._index];
+            value = parseFloat(Math.round(value * 100) / 100).toFixed(2);
+
+            return {
+                text: value + ": " + label,
+                fillStyle: fill,
+                strokeStyle: stroke,
+                lineWidth: bw,
+                hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+                index: i
+            };
+        });
+    } else {
+        return [];
+    }
+}
+
+var pointsCharts = {};
+var goalsCharts = {};
+var scorersCharts = {};
+
+var teamNames = [
+    "Mens 1",
+    "Ladies 1",
+    "Mens 2",
+    "Ladies 2",
+    "Mens 3",
+    "Ladies 3",
+    "Mens 4",
+    "Ladies 4",
+    "Mens 5",
+    "Mens 6"
+];
+
+var data = {};
+
+var onDataReady = function() {
+
+    var scoringRateData = {};
+
+    for (var iteam = 0; iteam < teamNames.length; iteam++) {
+        var teamName = teamNames[iteam]
+        var teamData = data[teamName];
+
+        var container = document.createElement("div");
+
+        var title = document.createElement("h3");
+        title.textContent = teamName;
+        title.setAttribute("style", "text-align: center;");
+        container.appendChild(title);
+
+        var chartContainer = document.createElement("div");
+
+        chartContainer.setAttribute("style", "width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;");
+
+        var canvases = [];
+
+        for (var icanvas = 0; icanvas < 3; icanvas++) {
+            var div = document.createElement("div");
+            div.setAttribute("style", "min-width: 300px; max-width: 500px; display: inline-block; flex: 1 1 auto; padding: 0px 10px 10px 20px;");
+
+            var canvas = document.createElement("canvas");
+            div.appendChild(canvas);
+
+            chartContainer.appendChild(div);
+
+            canvases.push(canvas);
+        }
+
+        container.appendChild(chartContainer);
+
+        document.body.appendChild(container);
+
+        var pointsConfig = {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        data: [],
+                        lineTension: 0,
+                        label: 'Points',
+                        borderColor: getColor(0),
+                        backgroundColor: getColor(0),
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: false,
+                },
+                scales: {
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Game Number",
+                        },
+                    }]
+                },
+            },
+        };
+
+        var goalsConfig = {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        lineTension: 0,
+                        data: [],
+                        label: 'Goals',
+                        borderColor: getColor(0),
+                        backgroundColor: getColor(0),
+                        fill: false,
+                    },
+                    {
+                        lineTension: 0,
+                        data: [],
+                        label: 'Goal Difference',
+                        borderColor: getColor(1),
+                        backgroundColor: getColor(1),
+                        fill: false,
+                    },
+                ],
+            },
+        };
+
+        goalsConfig["options"] = pointsConfig.options;
+
+        var scorersConfig = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [],
+                    backgroundColor: [],
+                }],
+                labels: [],
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'right',
+                    labels: {
+                        generateLabels: pieLabels,
+                    }
+                },
+                title: {
+                    display: false,
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true,
+                }
+            }
+        };
+
+        var cumulativePoints = [0];
+        var cumulativeGoals = [0];
+        var cumulativeGoalDifference = [0];
+
+        var scorers = {};
+        var labels = [0];
+
+        for (var iresult = 0; iresult < teamData.length; iresult++) {
+            var resultData = teamData[iresult];
+
+            labels.push(iresult + 1);
+
+            var goalCount = 0;
+
+            for (var iscorer = 0; iscorer < resultData.scorers.length; iscorer++) {
+                var scorerData = resultData.scorers[iscorer]
+
+                scorers[scorerData.name] = (scorers[scorerData.name] || 0) + scorerData.goals;
+                if (scorerData.name in scoringRateData) {
+                    scoringRateData[scorerData.name] = [scoringRateData[scorerData.name][0] + scorerData.goals,
+                                                        Math.max(scoringRateData[scorerData.name][1], teamData.length)];
+                } else {
+                    scoringRateData[scorerData.name] = [scorerData.goals, teamData.length];
+                }
+                goalCount += scorerData.goals;
+            }
+
+            cumulativeGoals.push(cumulativeGoals[cumulativeGoals.length - 1] + goalCount);
+
+            goalDifference = goalCount - resultData.opposition_score;
+            cumulativeGoalDifference.push(cumulativeGoalDifference[cumulativeGoalDifference.length - 1] + goalDifference);
+
+            var points = 0;
+            if (goalDifference > 0) {
+                points = 3;
+            } else if (goalDifference == 0) {
+                points = 1;
+            }
+
+            cumulativePoints.push(cumulativePoints[cumulativePoints.length - 1] + points);
+        }
+
+        pointsConfig.data.labels = labels;
+        pointsConfig.data.datasets[0].data = cumulativePoints;
+
+        goalsConfig.data.labels = labels;
+        goalsConfig.data.datasets[0].data = cumulativeGoals;
+        goalsConfig.data.datasets[1].data = cumulativeGoalDifference;
+
+        var scorersArray = [];
+        for (var name in scorers) {
+            if (!scorers.hasOwnProperty(name)) continue;
+            scorersArray.push([name, scorers[name]]);
+        }
+        scorersArray.sort(function(first, second) {
+            return second[1] - first[1];
+        });
+        for (var iscorer = 0; iscorer < scorersArray.length; iscorer++) {
+            var numGoals = scorersArray[iscorer][1];
+            scorersConfig.data.datasets[0].data.push(numGoals);
+            scorersConfig.data.labels.push(scorersArray[iscorer][0]);
+            scorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, numGoals));
+        }
+
+        var ctx = canvases[0].getContext('2d');
+        pointsCharts[teamName] = new Chart(ctx, pointsConfig);
+
+        var ctx = canvases[1].getContext('2d');
+        goalsCharts[teamName] = new Chart(ctx, goalsConfig);
+
+        var ctx = canvases[2].getContext('2d');
+        scorersCharts[teamName] = new Chart(ctx, scorersConfig);
+    }
+
+    var clubScorersConfig = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [],
+                backgroundColor: [],
+            }],
+            labels: [],
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'right',
+                labels: {
+                    generateLabels: pieLabels,
+                }
+            },
+            title: {
+                display: false,
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true,
+            }
+        }
+    }
+
+    var scorers = {};
+    for (var chartName in scorersCharts) {
+        if (!scorersCharts.hasOwnProperty(chartName)) continue;
+
+        var names = scorersCharts[chartName].config.data.labels;
+        var goals = scorersCharts[chartName].config.data.datasets[0].data;
+        for (var i = 0; i < names.length; i++) {
+            scorers[names[i]] = (scorers[names[i]] || 0) + goals[i];
+        }
+    }
+
+    var scorersArray = [];
+    for (var name in scorers) {
+        if (!scorers.hasOwnProperty(name)) continue;
+        scorersArray.push([name, scorers[name]]);
+    }
+    scorersArray.sort(function(first, second) {
+        return second[1] - first[1];
+    });
+
+    var goalsTotal = 0;
+
+    for (var iscorer = 0; iscorer < scorersArray.length; iscorer++) {
+        var goals = scorersArray[iscorer][1];
+        goalsTotal += goals;
+        clubScorersConfig.data.datasets[0].data.push(goals);
+        clubScorersConfig.data.datasets[0].backgroundColor.push(getColor(iscorer, goals));
+        clubScorersConfig.data.labels.push(scorersArray[iscorer][0]);
+    }
+
+    console.log("Total number of goals: " + goalsTotal);
+
+    var scoringRateConfig = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [],
+                backgroundColor: [],
+            }],
+            labels: [],
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'right',
+                labels: {
+                    generateLabels: pieRateLabels,
+                }
+            },
+            title: {
+                display: false,
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true,
+            }
+        }
+    }
+
+    orderedScoringRateData = []
+    for (var key in scoringRateData) {
+        if (scoringRateData.hasOwnProperty(key)) {
+            orderedScoringRateData.push([key, scoringRateData[key][0] / scoringRateData[key][1]])
+        }
+    }
+    orderedScoringRateData.sort(function(first, second) {
+        return second[1] - first[1];
+    });
+
+    for (var iscorer = 0; iscorer < orderedScoringRateData.length; iscorer++) {
+        var rate = orderedScoringRateData[iscorer][1];
+        scoringRateConfig.data.datasets[0].data.push(rate);
+        scoringRateConfig.data.datasets[0].backgroundColor.push(getRateColor(iscorer, rate));
+        scoringRateConfig.data.labels.push(orderedScoringRateData[iscorer][0]);
+    }
+
+    var scoringRateContainer = document.createElement("div");
+
+    var scoringRateTitle = document.createElement("h3");
+    scoringRateTitle.textContent = "Goals Per Team Game";
+    scoringRateTitle.setAttribute("style", "text-align: center;");
+    scoringRateContainer.appendChild(scoringRateTitle);
+
+    var scoringRateChartContainer = document.createElement("div");
+
+    var scoringRateDiv = document.createElement("div");
+    scoringRateDiv.setAttribute("style", "max-width: 1000px; margin-right: auto; margin-left: auto; display: block;");
+
+    var scoringRateCanvas = document.createElement("canvas");
+    scoringRateDiv.appendChild(scoringRateCanvas);
+
+    scoringRateChartContainer.appendChild(scoringRateDiv);
+
+    scoringRateContainer.appendChild(scoringRateChartContainer);
+
+    document.body.insertBefore(scoringRateContainer, document.body.firstChild);
+
+    var scoringRateCtx = scoringRateCanvas.getContext('2d');
+    scorersCharts["Club Goalscoring Rates"] = new Chart(scoringRateCtx, scoringRateConfig);
+
+    var scorersContainer = document.createElement("div");
+
+    var scorersTitle = document.createElement("h3");
+    scorersTitle.textContent = "Club Goalscorers";
+    scorersTitle.setAttribute("style", "text-align: center;");
+    scorersContainer.appendChild(scorersTitle);
+
+    var scorersChartContainer = document.createElement("div");
+
+    var scorersDiv = document.createElement("div");
+    scorersDiv.setAttribute("style", "max-width: 1000px; margin-right: auto; margin-left: auto; display: block;");
+
+    var scorersCanvas = document.createElement("canvas");
+    scorersDiv.appendChild(scorersCanvas);
+
+    scorersChartContainer.appendChild(scorersDiv);
+
+    scorersContainer.appendChild(scorersChartContainer);
+
+    document.body.insertBefore(scorersContainer, document.body.firstChild);
+
+    var scorersCtx = scorersCanvas.getContext('2d');
+    scorersCharts["Club Goalscorers"] = new Chart(scorersCtx, clubScorersConfig);
+};
+
+var request = new XMLHttpRequest();
+if (request.overrideMimeType) {
+    request.overrideMimeType("application/json");
+}
+
+var path = "data-1569877534.json"
+request.open("GET", path, true);
+
+request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == "200") {
+        data = JSON.parse(request.responseText);
+        onDataReady();
+    }
+}
+
+request.send();
+
+	</script>
+</body>
+
+</html>
