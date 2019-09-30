@@ -439,7 +439,7 @@ var onDataReady = function() {
     var scoringRateContainer = document.createElement("div");
 
     var scoringRateTitle = document.createElement("h3");
-    scoringRateTitle.textContent = "Goals Per Team Game";
+    scoringRateTitle.textContent = "Goals / Team Fixtures";
     scoringRateTitle.setAttribute("style", "text-align: center;");
     scoringRateContainer.appendChild(scoringRateTitle);
 
