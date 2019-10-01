@@ -15,6 +15,10 @@
          {
            "name": "Owen M",
            "goals": 1
+         },
+         {
+           "name": "Henry W",
+           "goals": 1
          }
        ]
      }
@@ -35,6 +39,10 @@
          {
            "name": "Charlie L",
            "goals": 1
+         },
+         {
+           "name": "Charlie P",
+           "goals": 1
          }
        ]
      }
@@ -47,6 +55,10 @@
          {
            "name": "Nick T",
            "goals": 3
+         },
+         {
+           "name": "Simon T",
+           "goals": 1
          }
        ]
      }
@@ -71,6 +83,10 @@
          {
            "name": "Brooksy",
            "goals": 1
+         },
+         {
+           "name": "Ben H",
+           "goals": 1
          }
        ]
      }
@@ -79,7 +95,12 @@
      {
        "opposition": "",
        "opposition_score": 3,
-       "scorers": []
+       "scorers": [
+         {
+           "name": "Gary Adey",
+           "goals": 3
+         }
+       ]
      }
    ],
    "Mens 6": [],
@@ -91,6 +112,10 @@
          {
            "name": "Sam W",
            "goals": 1
+         },
+         {
+           "name": "Melissa S",
+           "goals": 1
          }
        ]
      }
@@ -100,15 +125,24 @@
      {
        "opposition": "",
        "opposition_score": 0,
-       "scorers": []
+       "scorers": [
+         {
+           "name": "Sophie Poole",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Ladies 4": [
      {
        "opposition": "",
        "opposition_score": 2,
-       "scorers": []
+       "scorers": [
+         {
+           "name": "Posy S",
+           "goals": 1
+         }
+       ]
      }
    ]
 }
-
