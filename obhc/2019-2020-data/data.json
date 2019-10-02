@@ -66,6 +66,24 @@
    "Mens 4": [
      {
        "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "James R",
+           "goals": 3
+         },
+         {
+           "name": "Peter E",
+           "goals": 1
+         },
+         {
+           "name": "Ali B",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
        "opposition_score": 0,
        "scorers": [
          {
@@ -94,6 +112,20 @@
    "Mens 5": [
      {
        "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "Gary Adey",
+           "goals": 1
+         },
+         {
+           "name": "Jake Clements",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
        "opposition_score": 3,
        "scorers": [
          {
@@ -103,7 +135,39 @@
        ]
      }
    ],
-   "Mens 6": [],
+   "Mens 6": [
+     {
+       "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "Jon G",
+           "goals": 1
+         },
+         {
+           "name": "Steve S",
+           "goals": 1
+         },
+         {
+           "name": "Kevin M",
+           "goals": 1
+         },
+         {
+           "name": "David R",
+           "goals": 1
+         },
+         {
+           "name": "Ross C",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 9,
+       "scorers": []
+     }
+   ],
    "Ladies 1": [
      {
        "opposition": "",
@@ -146,3 +210,4 @@
      }
    ]
 }
+
