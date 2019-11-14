@@ -41,6 +41,48 @@
            "goals": 3
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "Matt M",
+           "goals": 3
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 3,
+       "scorers": [
+         {
+           "name": "Owen M",
+           "goals": 1
+         },
+         {
+           "name": "Dan G",
+           "goals": 1
+         },
+         {
+           "name": "Nathan C",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 0,
+       "scorers": [
+         {
+           "name": "Matt M",
+           "goals": 2
+         },
+         {
+           "name": "Nathan C",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Mens 2": [
@@ -127,6 +169,48 @@
            "goals": 1
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 0,
+       "scorers": [
+         {
+           "name": "Matt J",
+           "goals": 1
+         },
+         {
+           "name": "James B",
+           "goals": 1
+         },
+         {
+           "name": "Charlie P",
+           "goals": 1
+         },
+         {
+           "name": "Chris W",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 0,
+       "scorers": [
+         {
+           "name": "Dave M",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "James B",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Mens 3": [
@@ -186,6 +270,43 @@
          },
          {
            "name": "Jack T",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 4,
+       "scorers": []
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "Nick H",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "James R",
+           "goals": 2
+         },
+         {
+           "name": "Nick T",
+           "goals": 2
+         },
+         {
+           "name": "Sam E",
+           "goals": 1
+         },
+         {
+           "name": "Will G",
            "goals": 1
          }
        ]
@@ -301,6 +422,64 @@
            "goals": 3
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "Al B",
+           "goals": 3
+         },
+         {
+           "name": "Dave Jackson",
+           "goals": 2
+         },
+         {
+           "name": "Mike Summers",
+           "goals": 1
+         },
+         {
+           "name": "Mike T",
+           "goals": 1
+         },
+         {
+           "name": "James R",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 4,
+       "scorers": [
+         {
+           "name": "Al B",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "Al B",
+           "goals": 3
+         },
+         {
+           "name": "Pat",
+           "goals": 1
+         },
+         {
+           "name": "Dave J",
+           "goals": 1
+         },
+         {
+           "name": "Edd T",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Mens 5": [
@@ -347,6 +526,38 @@
        "opposition": "",
        "opposition_score": 6,
        "scorers": []
+     },
+     {
+       "opposition": "",
+       "opposition_score": 2,
+       "scorers": [
+         {
+           "name": "Gary A",
+           "goals": 1
+         },
+         {
+           "name": "Heff H",
+           "goals": 2
+         },
+         {
+           "name": "James F",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "Jake C",
+           "goals": 2
+         },
+         {
+           "name": "Gary A",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Mens 6": [
@@ -410,6 +621,11 @@
            "goals": 3
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 5,
+       "scorers": []
      }
    ],
    "Ladies 1": [
@@ -426,11 +642,6 @@
            "goals": 1
          }
        ]
-     },
-     {
-       "opposition": "",
-       "opposition_score": 7,
-       "scorers": []
      },
      {
        "opposition": "",
@@ -464,6 +675,25 @@
            "goals": 2
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 3,
+       "scorers": [
+         {
+           "name": "Kolgate",
+           "goals": 1
+         },
+         {
+           "name": "Issy W",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 1,
+       "scorers": []
      }
    ],
    "Ladies 2": [
@@ -515,6 +745,20 @@
          {
            "name": "Steph",
            "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 0,
+       "scorers": [
+         {
+           "name": "Kirstie L",
+           "goals": 1
+         },
+         {
+           "name": "Sam W",
+           "goals": 2
          }
        ]
      }
@@ -575,6 +819,34 @@
            "goals": 2
          }
        ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 0,
+       "scorers": [
+         {
+           "name": "Sophie G",
+           "goals": 1
+         },
+         {
+           "name": "Maddie P",
+           "goals": 1
+         },
+         {
+           "name": "Unclaimed",
+           "goals": 1
+         }
+       ]
+     },
+     {
+       "opposition": "",
+       "opposition_score": 1,
+       "scorers": [
+         {
+           "name": "Alice ",
+           "goals": 1
+         }
+       ]
      }
    ],
    "Ladies 4": [
@@ -601,6 +873,11 @@
      {
        "opposition": "",
        "opposition_score": 2,
+       "scorers": []
+     },
+     {
+       "opposition": "",
+       "opposition_score": 7,
        "scorers": []
      }
    ]
