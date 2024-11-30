@@ -9,15 +9,16 @@ const imageData = [
     [ "https://img.tile.expert/img_lb/aleluia/color-art/per_sito/minimali/b_aleluia_color_art_pf013_color_art_blue.webp?64", 30, ],
 ];
 
-const resetTileSelection = () => {
-    const imagesContainer = document.getElementById("tiles");
-    imagesContainer.innerHTML = "";
+const tilesContainer = document.getElementById("tiles");
+const resetTilesAvailable = () => {
+    tilesContainer.innerHTML = "";
     imageData.forEach((img, i) => {
-        const container = imagesContainer.appendChild(document.createElement("div"));
+        const container = tilesContainer.appendChild(document.createElement("div"));
         container.style = "display: inline-block;";
         const elem = container.appendChild(document.createElement("img"));
         elem.style = "width: 50px; margin: 5px;";
         elem.src = img[0];
+        elem.id = `image-${i}`;
         const index = container.appendChild(document.createElement("p"));
         index.style = "text-align: center;";
         index.innerHTML = i;
@@ -27,7 +28,7 @@ const resetTileSelection = () => {
         remaining.innerHTML = img[1];
     });
 };
-resetTileSelection();
+resetTilesAvailable();
 
 const getRemaining = (index) => {
     const elem = document.getElementById(`remaining-${index}`)
@@ -54,12 +55,20 @@ const getImageElement = (index, rotation) => {
     return document.getElementById("tiles").childNodes[index].childNodes[0];
 };
 
+const selectedTile = { column: -1, row: -1 };
+const resetSelectedTile = () => {
+    selectedTile.column = -1;
+    selectedTile.row = -1;
+};
+
 const gridWidth = 18;
 const gridHeight = 13;
 
 const renderCanvas = () => {
     const tileData = parseDataFromTextArea();
     if (!tileData[0][0]) return;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const tileSize = getTileSize();
 
@@ -80,10 +89,16 @@ const renderCanvas = () => {
             ctx.translate(-tileSize/2, -tileSize/2); 
             const image = getImageElement(index, rotation);
             ctx.drawImage(image, 0, 0, tileSize, tileSize);
+            if (row === selectedTile.row && column === selectedTile.column) {
+                ctx.beginPath();
+                ctx.strokeStyle = "red";
+                ctx.rect(0, 0, tileSize, tileSize);
+                ctx.stroke();
+            }
             ctx.restore(); 
         }
     }
-}
+};
 
 const getTileSize = () => {
     return canvas.width / (gridWidth + 1);
@@ -129,8 +144,46 @@ const writeDataToTextArea = (inputData) => {
     data.value = inputData.map(row => row.join(" ")).join("\n");
 };
 
+const getIndexFromCoord = (tileSize, x, y) => {
+    let [column, row] = [x, y].map(d => parseInt(d/tileSize));
+    if (column == 5) return null;
+    if (column > 5) column--;
+    return { row, column };
+};
+
+canvas.addEventListener('mousedown', (event) => {
+    const clicked = getIndexFromCoord(getTileSize(), event.offsetX, event.offsetY);
+    if (!clicked) return;
+
+    if (event.shiftKey) {
+        const data = parseDataFromTextArea();
+        const item = data[clicked.row][clicked.column];
+        data[clicked.row][clicked.column] = `${item[0]}${(parseInt(item[1]) + 1)%4}`;
+        writeDataToTextArea(data);
+        writeDataToCondensed(data);
+    } else if (selectedTile.column === -1) {
+        selectedTile.column = clicked.column;
+        selectedTile.row = clicked.row;
+    } else {
+        if (!(clicked.column === selectedTile.column && clicked.row === selectedTile.row)) {
+            const data = parseDataFromTextArea();
+            const tmp = data[selectedTile.row][selectedTile.column];
+            data[selectedTile.row][selectedTile.column] = data[clicked.row][clicked.column];
+            data[clicked.row][clicked.column] = tmp;
+            writeDataToTextArea(data);
+            writeDataToCondensed(data);
+        }
+        resetSelectedTile();
+    }
+    renderCanvas();
+});
+
+tilesContainer.addEventListener('mousedown', (event) => {
+    if (selectedTile.x === -1) return;
+});
+
 const randomise = () => {
-    resetTileSelection();
+    resetTilesAvailable();
     const tileData = [[]];
     for (let row = 0; row < gridHeight; row++) {
         for (let column = 0; column < gridWidth; column++) {
@@ -174,7 +227,7 @@ const renderCondesnsed = () => {
 const renderTextArea = () => {
     const tileData = parseDataFromTextArea();
     writeDataToCondensed(tileData);
-    resetTileSelection();
+    resetTilesAvailable();
     tileData.forEach(rowData => {
         rowData.forEach(tileData => {
             const tileIndex = tileData[0];
