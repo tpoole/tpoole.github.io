@@ -16,7 +16,7 @@ const resetTileSelection = () => {
         const container = imagesContainer.appendChild(document.createElement("div"));
         container.style = "display: inline-block;";
         const elem = container.appendChild(document.createElement("img"));
-        elem.style = "width: 100px; margin: 5px;";
+        elem.style = "width: 50px; margin: 5px;";
         elem.src = img[0];
         const index = container.appendChild(document.createElement("p"));
         index.style = "text-align: center;";
