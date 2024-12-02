@@ -66,7 +66,7 @@ const gridHeight = 13;
 
 const renderCanvas = () => {
     const tileData = parseDataFromTextArea();
-    if (!tileData[0][0]) return;
+    if (tileData[0][0].length === 0) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -82,7 +82,7 @@ const renderCanvas = () => {
     for (let row = 0; row < gridHeight; row++) {
         for (let column = 0; column < gridWidth; column++) {
             const { x, y } = getCoordFromLineIndex(column, row);
-            const [ index, rotation ] = [...tileData[row][column]];
+            const [index, rotation] = tileData[row][column];
             ctx.save(); 
             ctx.translate(x + tileSize/2, y + tileSize/2);
             ctx.rotate(rotation*Math.PI/2);
@@ -120,7 +120,7 @@ const parseDataFromCondensed = () => {
     let index = 0;
     const data = [[]];
     while (index < stringData.length) {
-        data[data.length - 1].push(`${stringData[index]}${stringData[index + 1]}`);
+        data[data.length - 1].push([stringData[index], stringData[index + 1]].map(e => parseInt(e)));
         index += 2;
         if (index % (2*gridWidth) === 0) {
             data.push([]);
@@ -131,17 +131,17 @@ const parseDataFromCondensed = () => {
 
 const writeDataToCondensed = (inputData) => {
     const condensedData = document.getElementById("condensed-data");
-    condensedData.value = inputData.map(row => row.join("")).join("");
+    condensedData.value = inputData.map(row => row.map(e => e.join("")).join("")).join("");
 };
 
 const parseDataFromTextArea = () => {
-    const elem = document.getElementById("data");
-    return elem.value.trim().split("\n").map(row => row.split(" "));
+    const data = document.getElementById("data").value.trim();
+    return data.split("\n").map(row => row.split(" ").map(t => [...t].map(e => parseInt(e))));
 };
 
 const writeDataToTextArea = (inputData) => {
     const data = document.getElementById("data");
-    data.value = inputData.map(row => row.join(" ")).join("\n");
+    data.value = inputData.map(row => row.map(e => e.join("")).join(" ")).join("\n");
 };
 
 const writeData = (inputData) => {
@@ -163,7 +163,7 @@ canvas.addEventListener('mousedown', (event) => {
     if (event.shiftKey) {
         const data = parseDataFromTextArea();
         const item = data[clicked.row][clicked.column];
-        data[clicked.row][clicked.column] = `${item[0]}${(parseInt(item[1]) + 1)%4}`;
+        item[1] = (item[1] + 1) % 4;
         writeData(data);
     } else if (selectedTile.column === -1) {
         selectedTile.column = clicked.column;
@@ -171,9 +171,9 @@ canvas.addEventListener('mousedown', (event) => {
     } else {
         if (!(clicked.column === selectedTile.column && clicked.row === selectedTile.row)) {
             const data = parseDataFromTextArea();
-            const tmp = data[selectedTile.row][selectedTile.column];
+            const [selectedIndex, selectedRotation] = data[selectedTile.row][selectedTile.column];
             data[selectedTile.row][selectedTile.column] = data[clicked.row][clicked.column];
-            data[clicked.row][clicked.column] = tmp;
+            data[clicked.row][clicked.column] = [ selectedIndex, selectedRotation ];
             writeData(data);
         }
         resetSelectedTile();
@@ -193,7 +193,7 @@ tilesContainer.addEventListener('mousedown', (event) => {
     const data = parseDataFromTextArea();
     const selected = data[selectedTile.row][selectedTile.column];
     replaceTile(selected[0]);
-    data[selectedTile.row][selectedTile.column] = `${newTile}${selected[1]}`;
+    data[selectedTile.row][selectedTile.column][0] = newTile;
     writeData(data);
     resetSelectedTile();
     renderCanvas(); 
@@ -201,33 +201,37 @@ tilesContainer.addEventListener('mousedown', (event) => {
 
 const randomise = (noConsecutiveRotations) => {
     resetTilesAvailable();
-    const tileData = [[]];
+    const tileData = new Array(gridHeight);
 
-    let lastRotation = -1;
-    let lastRow = null;
-    let aboveRotation = -1;
     let lastTile = -1;
+    let lastRotation = -1;
+    let aboveTile = -1;
+    let aboveRotation = -1;
 
     for (let row = 0; row < gridHeight; row++) {
-        if (row > 0) {
-            lastRow = tileData[row - 1];
-        }
+        tileData[row] = new Array(gridWidth);
         for (let column = 0; column < gridWidth; column++) {
+            if (row > 0) {
+                [aboveTile, aboveRotation] = tileData[row - 1][column];
+            }
+
             let imageIndex = -1;
             while (imageIndex === -1) {
                 const randomIndex = Math.floor(Math.random() * imageData.length);
                 imageIndex = pickTile(randomIndex);
             }
+            lastTile = imageIndex;
+
             let rotation = Math.floor(Math.random() * 4);
             if (noConsecutiveRotations) {
-                while  (rotation === lastRotation || (lastRow && rotation === parseInt(lastRow[column][1]))) {
+                while  (rotation === lastRotation || rotation === aboveRotation) {
                     rotation = Math.floor(Math.random() * 4);
                 }
             }
-            tileData[row].push(`${imageIndex}${rotation}`);
             lastRotation = rotation;
+
+            tileData[row][column] = [imageIndex, rotation];
         }
-        tileData.push([]);
     };
 
     writeData(tileData);
@@ -242,7 +246,7 @@ const useAllWhiteTiles = () => {
         const randomRow = Math.floor(Math.random() * gridHeight);
         const randomColumn = Math.floor(Math.random() * gridWidth);
         replaceTile(tileData[randomRow][randomColumn][0]);
-        tileData[randomRow][randomColumn] = `${whiteTileIndex}${tileData[randomRow][randomColumn][1]}`;
+        tileData[randomRow][randomColumn] = [whiteTileIndex, tileData[randomRow][randomColumn][1]];
     }
 
     writeDataToTextArea(tileData);
