@@ -144,6 +144,11 @@ const writeDataToTextArea = (inputData) => {
     data.value = inputData.map(row => row.join(" ")).join("\n");
 };
 
+const writeData = (inputData) => {
+    writeDataToCondensed(inputData);
+    writeDataToTextArea(inputData);
+};
+
 const getIndexFromCoord = (tileSize, x, y) => {
     let [column, row] = [x, y].map(d => parseInt(d/tileSize));
     if (column == 5) return null;
@@ -159,8 +164,7 @@ canvas.addEventListener('mousedown', (event) => {
         const data = parseDataFromTextArea();
         const item = data[clicked.row][clicked.column];
         data[clicked.row][clicked.column] = `${item[0]}${(parseInt(item[1]) + 1)%4}`;
-        writeDataToTextArea(data);
-        writeDataToCondensed(data);
+        writeData(data);
     } else if (selectedTile.column === -1) {
         selectedTile.column = clicked.column;
         selectedTile.row = clicked.row;
@@ -170,8 +174,7 @@ canvas.addEventListener('mousedown', (event) => {
             const tmp = data[selectedTile.row][selectedTile.column];
             data[selectedTile.row][selectedTile.column] = data[clicked.row][clicked.column];
             data[clicked.row][clicked.column] = tmp;
-            writeDataToTextArea(data);
-            writeDataToCondensed(data);
+            writeData(data);
         }
         resetSelectedTile();
     }
@@ -179,7 +182,21 @@ canvas.addEventListener('mousedown', (event) => {
 });
 
 tilesContainer.addEventListener('mousedown', (event) => {
-    if (selectedTile.x === -1) return;
+    if (selectedTile.row === -1) return;
+    const matches = event.target.id.match(/^image-(\d+)/);
+    if (!matches) return;
+    const newTile = pickTile(parseInt(matches[1]));
+    if (newTile === -1) {
+        alert(`No tile ${newTile} left`);
+        return;
+    }
+    const data = parseDataFromTextArea();
+    const selected = data[selectedTile.row][selectedTile.column];
+    replaceTile(selected[0]);
+    data[selectedTile.row][selectedTile.column] = `${newTile}${selected[1]}`;
+    writeData(data);
+    resetSelectedTile();
+    renderCanvas(); 
 });
 
 const randomise = () => {
@@ -198,8 +215,7 @@ const randomise = () => {
         tileData.push([]);
     };
 
-    writeDataToTextArea(tileData);
-    writeDataToCondensed(tileData);
+    writeData(tileData);
     renderCanvas();
 }
 
