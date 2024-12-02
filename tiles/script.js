@@ -199,18 +199,33 @@ tilesContainer.addEventListener('mousedown', (event) => {
     renderCanvas(); 
 });
 
-const randomise = () => {
+const randomise = (noConsecutiveRotations) => {
     resetTilesAvailable();
     const tileData = [[]];
+
+    let lastRotation = -1;
+    let lastRow = null;
+    let aboveRotation = -1;
+    let lastTile = -1;
+
     for (let row = 0; row < gridHeight; row++) {
+        if (row > 0) {
+            lastRow = tileData[row - 1];
+        }
         for (let column = 0; column < gridWidth; column++) {
             let imageIndex = -1;
             while (imageIndex === -1) {
                 const randomIndex = Math.floor(Math.random() * imageData.length);
                 imageIndex = pickTile(randomIndex);
             }
-            const rotation = Math.floor(Math.random() * 4);
+            let rotation = Math.floor(Math.random() * 4);
+            if (noConsecutiveRotations) {
+                while  (rotation === lastRotation || (lastRow && rotation === parseInt(lastRow[column][1]))) {
+                    rotation = Math.floor(Math.random() * 4);
+                }
+            }
             tileData[row].push(`${imageIndex}${rotation}`);
+            lastRotation = rotation;
         }
         tileData.push([]);
     };
@@ -260,6 +275,12 @@ const controls = document.getElementById("controls");
 const randomiseButton = controls.appendChild(document.createElement("button"));
 randomiseButton.innerHTML = "Randomise";
 randomiseButton.onclick = () => { randomise() };
+
+controls.appendChild(document.createElement("br"));
+
+const randomiseButton2 = controls.appendChild(document.createElement("button"));
+randomiseButton2.innerHTML = "Randomise no consec rotation";
+randomiseButton2.onclick = () => { randomise(true) };
 
 controls.appendChild(document.createElement("br"));
 
