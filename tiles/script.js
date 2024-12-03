@@ -199,7 +199,8 @@ tilesContainer.addEventListener('mousedown', (event) => {
     renderCanvas(); 
 });
 
-const randomise = (noConsecutiveRotations) => {
+const randomise = (noConsecutiveRotations, stickiness) => {
+    stickiness = stickiness || 0;
     resetTilesAvailable();
     const tileData = new Array(gridHeight);
 
@@ -208,6 +209,15 @@ const randomise = (noConsecutiveRotations) => {
     let aboveTile = -1;
     let aboveRotation = -1;
 
+    const getRandomTile = () => {
+        let imageIndex = -1;
+        while (imageIndex === -1) {
+            const randomIndex = Math.floor(Math.random() * imageData.length);
+            imageIndex = pickTile(randomIndex);
+        }
+        return imageIndex;
+    }
+
     for (let row = 0; row < gridHeight; row++) {
         tileData[row] = new Array(gridWidth);
         for (let column = 0; column < gridWidth; column++) {
@@ -215,10 +225,22 @@ const randomise = (noConsecutiveRotations) => {
                 [aboveTile, aboveRotation] = tileData[row - 1][column];
             }
 
-            let imageIndex = -1;
-            while (imageIndex === -1) {
-                const randomIndex = Math.floor(Math.random() * imageData.length);
-                imageIndex = pickTile(randomIndex);
+            let imageIndex = getRandomTile();
+            if (row > 0 && column > 0 && imageIndex !== lastTile && imageIndex !== aboveTile) {
+                if (Math.random() < stickiness) {
+                    replaceTile(imageIndex);
+                    const order = [aboveTile, lastTile];
+                    if (Math.random() < 0.5) {
+                        order.reverse();
+                    }
+                    imageIndex = pickTile(order[0]);
+                    if (imageIndex === -1) {
+                        imageIndex = pickTile(order[1]);
+                        if (imageIndex === -1) {
+                            imageIndex = getRandomTile();
+                        }
+                    }
+                }
             }
             lastTile = imageIndex;
 
@@ -276,15 +298,20 @@ const renderTextArea = () => {
 
 const controls = document.getElementById("controls");
 
-const randomiseButton = controls.appendChild(document.createElement("button"));
-randomiseButton.innerHTML = "Randomise";
-randomiseButton.onclick = () => { randomise() };
+controls.appendChild(document.createElement("span")).innerHTML = "No consecutive rotations";
+const noConsecCheckbox = controls.appendChild(document.createElement("input"));
+noConsecCheckbox.type = "checkbox";
 
 controls.appendChild(document.createElement("br"));
 
-const randomiseButton2 = controls.appendChild(document.createElement("button"));
-randomiseButton2.innerHTML = "Randomise no consec rotation";
-randomiseButton2.onclick = () => { randomise(true) };
+controls.appendChild(document.createElement("span")).innerHTML = "Stickiness";
+const stickinessInput = controls.appendChild(document.createElement("input"));
+
+controls.appendChild(document.createElement("br"));
+
+const randomiseButton = controls.appendChild(document.createElement("button"));
+randomiseButton.innerHTML = "Randomise";
+randomiseButton.onclick = () => { randomise(noConsecCheckbox.checked, parseInt(stickinessInput.value)/100) };
 
 controls.appendChild(document.createElement("br"));
 
