@@ -311,7 +311,7 @@ controls.appendChild(document.createElement("br"));
 
 const randomiseButton = controls.appendChild(document.createElement("button"));
 randomiseButton.innerHTML = "Randomise";
-randomiseButton.onclick = () => { randomise(noConsecCheckbox.checked, parseInt(stickinessInput.value)/100) };
+randomiseButton.onclick = () => { randomise(noConsecCheckbox.checked, parseFloat(stickinessInput.value)) };
 
 controls.appendChild(document.createElement("br"));
 
